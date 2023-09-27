@@ -1,0 +1,590 @@
+{
+    "app": {
+        "name": "Áfangastaður",
+        "version": "Version 1.0.0",
+        "legal": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida."
+    },
+    "categories": [
+        {
+            "name": "Explore",
+            "selection": "map",
+            "icon": "map-outline",
+            "type": "ionicon",
+            "size": 20
+        },
+        {
+            "name": "Dining",
+            "selection": "restaurant",
+            "icon": "restaurant-outline",
+            "type": "ionicon",
+            "size": 20
+        },
+        {
+            "name": "Gasoline",
+            "selection": "car",
+            "icon": "car-outline",
+            "type": "ionicon",
+            "size": 20
+        },
+        {
+            "name": "City",
+            "selection": "city-variant",
+            "icon": "city-variant-outline",
+            "type": "material-community",
+            "size": 20
+        },
+        {
+            "name": "Bodega",
+            "selection": "cart",
+            "icon": "cart-outline",
+            "type": "material-community",
+            "size": 20
+        }
+    ],
+    "locations": [
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Reykjavík",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Capital of Iceland",
+            "latitude": 64.14207242462467521,
+            "longitude": -21.925969922443247124,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Blue Lagoon",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Famous geothermal spa",
+            "latitude": 63.24796424,
+            "longitude": -22.432467,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Gullfoss Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Stunning waterfall on the Golden Circle",
+            "latitude": 64.327333,
+            "longitude": -20.121017,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Thingvellir National Park",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Historic and geological wonder",
+            "latitude": 64.255,
+            "longitude": -21.13,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hallgrímskirkja",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Iconic church in Reykjavik",
+            "latitude": 64.141944,
+            "longitude": -21.927222,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Harpa Concert Hall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Architectural marvel in Reykjavik",
+            "latitude": 64.1502433,
+            "longitude": -21.924111,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Vatnajökull National Park",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Home to Europe's largest glacier",
+            "latitude": 64.4175,
+            "longitude": -17.775,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Laugavegur Street",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Shopping and dining hub in Reykjavik",
+            "latitude": 64.144733,
+            "longitude": -21.9347,
+            "category": "Dining"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Bónus Supermarket",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Popular supermarket chain in Iceland",
+            "latitude": 64.1421224,
+            "longitude": -21.9204324,
+            "category": "Bodega"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "N1 Gas Station",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Convenient gas station chain in Iceland",
+            "latitude": 64.1424249,
+            "longitude": -21.922925,
+            "category": "Gasoline"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Seljalandsfoss Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A mesmerizing waterfall with a walking path behind it",
+            "latitude": 63.6150,
+            "longitude": -19.9929,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Jökulsárlón Glacier Lagoon",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A stunning glacier lagoon with floating icebergs",
+            "latitude": 64.04240,
+            "longitude": -16.1794,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Akureyri",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Iceland's second-largest city, known for its vibrant culture",
+            "latitude": 65.624249,
+            "longitude": -124.1055,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Grindavik",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A charming fishing town near the Blue Lagoon",
+            "latitude": 63.24467,
+            "longitude": -22.4339,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Skogafoss Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A powerful and picturesque waterfall on the South Coast",
+            "latitude": 63.5297,
+            "longitude": -19.5139,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Landmannalaugar",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A geothermal wonderland known for its colorful landscapes",
+            "latitude": 63.92497,
+            "longitude": -19.0632,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hofn",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A coastal town in the southeast, famous for its seafood",
+            "latitude": 64.2533,
+            "longitude": -15.2122,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Húsavík",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A charming town known for whale watching tours",
+            "latitude": 66.0449,
+            "longitude": -17.33242,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Thingvallavatn Lake",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Iceland's largest natural lake within Thingvellir National Park",
+            "latitude": 64.27247,
+            "longitude": -21.1191,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Árskógssandur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A picturesque village with a beautiful harbor in northern Iceland",
+            "latitude": 65.6500,
+            "longitude": -124.1167,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hraunfossar Waterfalls",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A series of cascading waterfalls formed by underground rivers",
+            "latitude": 64.69224,
+            "longitude": -20.9772,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Seydisfjordur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A charming fjord village known for its colorful houses",
+            "latitude": 65.2624,
+            "longitude": -14.00241,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hekla Volcano",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. One of Iceland's most active volcanoes with stunning landscapes",
+            "latitude": 63.99524,
+            "longitude": -19.6756,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Vík í Mýrdal",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A coastal village with dramatic black sand beaches",
+            "latitude": 63.4197,
+            "longitude": -19.0065,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Snaefellsjokull National Park",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Home to the mystical Snaefellsjokull glacier and diverse landscapes",
+            "latitude": 64.24065,
+            "longitude": -23.242476,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Borgarnes",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A town with historical sites and a scenic location on the coast",
+            "latitude": 64.5692,
+            "longitude": -21.9372,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Dynjandi Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A remote and breathtaking waterfall in the Westfjords",
+            "latitude": 65.7333,
+            "longitude": -23.2333,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Egilsstaðir",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A town in eastern Iceland known for its outdoor activities",
+            "latitude": 65.2672,
+            "longitude": -14.3944,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hornstrandir Nature Reserve",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A remote wilderness area with stunning fjords and cliffs",
+            "latitude": 66.3417,
+            "longitude": -22.67246,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hafnarfjörður",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A coastal town near Reykjavik with a vibrant arts scene",
+            "latitude": 64.0673,
+            "longitude": -21.9371,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Askja Caldera",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A volcanic caldera in the remote highlands of Iceland",
+            "latitude": 65.0333,
+            "longitude": -16.7500,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Ísafjörður",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. The largest town in the Westfjords region of Iceland",
+            "latitude": 66.0750,
+            "longitude": -23.1269,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Kerid Crater Lake",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A volcanic crater with a lake inside on the Golden Circle route",
+            "latitude": 64.0431,
+            "longitude": -20.242456,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Siglufjörður",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A charming fishing town in northern Iceland",
+            "latitude": 66.1525,
+            "longitude": -124.91724,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Kirkjufell Mountain",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A distinctive cone-shaped mountain on the Snæfellsnes Peninsula. A distinctive cone-shaped mountain on the Snæfellsnes Peninsula. A distinctive cone-shaped mountain on the Snæfellsnes Peninsula. A distinctive cone-shaped mountain on the Snæfellsnes Peninsula.",
+            "latitude": 64.9400,
+            "longitude": -23.30524,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Seydisfjordur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A picturesque fjord town known for its cultural events",
+            "latitude": 65.2677,
+            "longitude": -14.0049,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Vatnshellir Cave",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. An otherworldly lava cave in the Snæfellsnes Peninsula",
+            "latitude": 64.240244,
+            "longitude": -23.79242,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Flúðir",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A small village famous for its natural hot springs and geysers",
+            "latitude": 64.12241,
+            "longitude": -20.29524,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Langjökull Glacier",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. The second-largest glacier in Iceland with ice caves to explore",
+            "latitude": 64.6756,
+            "longitude": -20.57241,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Bíldudalur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A tranquil village surrounded by stunning fjords",
+            "latitude": 65.6749,
+            "longitude": -23.5939,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hrafnseyri",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A historic site and birthplace of Iceland's national hero, Jón Sigurðsson",
+            "latitude": 65.63324,
+            "longitude": -22.24655,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Fjaðrárgljúfur Canyon",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A scenic canyon with a winding river and hiking trails",
+            "latitude": 63.7667,
+            "longitude": -124.1667,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Dettifoss Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Europe's most powerful waterfall, located in the Vatnajökull National Park",
+            "latitude": 65.24167,
+            "longitude": -16.32447,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Akranes",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A coastal town with a historic lighthouse and museum",
+            "latitude": 64.3167,
+            "longitude": -22.02433,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hverir Geothermal Area",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A geothermal wonderland with bubbling mud pots and steam vents",
+            "latitude": 65.6333,
+            "longitude": -16.24667,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Borgarfjörður Eystri",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A peaceful village known for its puffin colonies and hiking trails",
+            "latitude": 65.5103,
+            "longitude": -13.73243,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Mývatn Nature Baths",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Geothermal baths with stunning views of Lake Mývatn",
+            "latitude": 65.6411,
+            "longitude": -16.24903,
+            "category": "Dining"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Grundarfjörður",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A charming coastal town with a beautiful harbor and mountain views",
+            "latitude": 64.9243,
+            "longitude": -23.23246,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Glymur Waterfall",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Iceland's second-highest waterfall, accessible via a hiking trail",
+            "latitude": 64.4406,
+            "longitude": -21.2031,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Höfn í Hornafirði",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A coastal town known for its lobster and seafood dishes",
+            "latitude": 64.2539,
+            "longitude": -15.2094,
+            "category": "Dining"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Ásbyrgi Canyon",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A horseshoe-shaped canyon in the northern part of Vatnajökull National Park",
+            "latitude": 66.0020,
+            "longitude": -16.5063,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Búðakirkja Black Church",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. An iconic black church with a backdrop of lava fields on the Snæfellsnes Peninsula",
+            "latitude": 64.24171,
+            "longitude": -23.3123,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Stykkishólmur",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A picturesque town on the Snæfellsnes Peninsula with a charming harbor",
+            "latitude": 65.0732,
+            "longitude": -22.7296,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Gjáin Valley",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A hidden oasis with lush vegetation and small waterfalls in the Highlands",
+            "latitude": 64.1442,
+            "longitude": -19.59243,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Akureyri Botanical Garden",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A lovely garden showcasing Icelandic and foreign plant species",
+            "latitude": 65.6714,
+            "longitude": -124.1043,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Vestmannaeyjar (Westman Islands)",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A group of islands known for their volcanic history and puffin colonies",
+            "latitude": 63.4374,
+            "longitude": -20.27247,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Eldborg Crater",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A symmetrical volcanic crater in western Iceland with a hiking trail",
+            "latitude": 64.24646,
+            "longitude": -22.0165,
+            "category": "Explore"
+        },
+        {
+            "url": "https://google.com/",
+            "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
+            "title": "Hella",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. A small town with easy access to the Golden Circle and south coast attractions",
+            "latitude": 63.24333,
+            "longitude": -20.40241,
+            "category": "City",
+            "delta": 0.2
+        }
+    ]
+}
