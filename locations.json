@@ -2,7 +2,7 @@
     "app": {
         "name": "Áfangastaður",
         "version": "Version 1.0.0",
-        "legal": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida."
+        "legal": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum eget eros sed accumsan. In aliquam viverra est, non sollicitudin neque auctor vitae. Duis ac rhoncus felis. Nunc tempor iaculis ligula, fermentum finibus ante. Etiam commodo ante sit amet eros condimentum tempor. Nulla vel tellus aliquet, efficitur odio sit amet, hendrerit nisi. Cras non ex rutrum, sollicitudin elit et, ultrices risus. Nulla sem dui, posuere vitae tortor sed, finibus consectetur urna. Mauris volutpat, elit nec vestibulum gravida, risus neque luctus elit, et feugiat sem nibh dapibus arcu. Nam feugiat rutrum mauris a pharetra.\n\nEtiam nec ligula lacinia, molestie felis et, porta urna. Nunc efficitur pulvinar gravida."
     },
     "categories": [
         {
@@ -43,6 +43,8 @@
     ],
     "locations": [
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Reykjavík",
@@ -53,6 +55,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Blue Lagoon",
@@ -62,6 +66,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Gullfoss Waterfall",
@@ -71,6 +77,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Thingvellir National Park",
@@ -80,6 +88,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hallgrímskirkja",
@@ -89,6 +99,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Harpa Concert Hall",
@@ -98,6 +110,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Vatnajökull National Park",
@@ -107,6 +121,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Laugavegur Street",
@@ -116,6 +132,8 @@
             "category": "Dining"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Bónus Supermarket",
@@ -125,6 +143,8 @@
             "category": "Bodega"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "N1 Gas Station",
@@ -134,6 +154,8 @@
             "category": "Gasoline"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Seljalandsfoss Waterfall",
@@ -143,6 +165,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Jökulsárlón Glacier Lagoon",
@@ -152,6 +176,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Akureyri",
@@ -162,6 +188,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Grindavik",
@@ -172,6 +200,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Skogafoss Waterfall",
@@ -181,6 +211,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Landmannalaugar",
@@ -190,6 +222,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hofn",
@@ -200,6 +234,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Húsavík",
@@ -210,6 +246,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Thingvallavatn Lake",
@@ -219,6 +257,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Árskógssandur",
@@ -229,6 +269,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hraunfossar Waterfalls",
@@ -238,6 +280,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Seydisfjordur",
@@ -248,6 +292,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hekla Volcano",
@@ -257,6 +303,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Vík í Mýrdal",
@@ -267,6 +315,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Snaefellsjokull National Park",
@@ -276,6 +326,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Borgarnes",
@@ -286,6 +338,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Dynjandi Waterfall",
@@ -295,6 +349,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Egilsstaðir",
@@ -305,6 +361,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hornstrandir Nature Reserve",
@@ -314,6 +372,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hafnarfjörður",
@@ -324,6 +384,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Askja Caldera",
@@ -333,6 +395,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Ísafjörður",
@@ -343,6 +407,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Kerid Crater Lake",
@@ -352,6 +418,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Siglufjörður",
@@ -362,6 +430,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Kirkjufell Mountain",
@@ -371,6 +441,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Seydisfjordur",
@@ -381,6 +453,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Vatnshellir Cave",
@@ -390,6 +464,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Flúðir",
@@ -400,6 +476,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Langjökull Glacier",
@@ -409,6 +487,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Bíldudalur",
@@ -419,6 +499,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hrafnseyri",
@@ -429,6 +511,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Fjaðrárgljúfur Canyon",
@@ -438,6 +522,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Dettifoss Waterfall",
@@ -447,6 +533,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Akranes",
@@ -457,6 +545,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hverir Geothermal Area",
@@ -466,6 +556,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Borgarfjörður Eystri",
@@ -476,6 +568,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Mývatn Nature Baths",
@@ -485,6 +579,8 @@
             "category": "Dining"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Grundarfjörður",
@@ -495,6 +591,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Glymur Waterfall",
@@ -504,6 +602,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Höfn í Hornafirði",
@@ -513,6 +613,8 @@
             "category": "Dining"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Ásbyrgi Canyon",
@@ -522,6 +624,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Búðakirkja Black Church",
@@ -531,6 +635,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Stykkishólmur",
@@ -541,6 +647,8 @@
             "delta": 0.2
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Gjáin Valley",
@@ -550,6 +658,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Akureyri Botanical Garden",
@@ -559,6 +669,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Vestmannaeyjar (Westman Islands)",
@@ -568,6 +680,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Eldborg Crater",
@@ -577,6 +691,8 @@
             "category": "Explore"
         },
         {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
             "url": "https://google.com/",
             "image": "https://e498rczdjg6.exactdn.com/wp-content/uploads/2020/09/Selfoss-waterfall-3-2048x1331.jpg",
             "title": "Hella",
