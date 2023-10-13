@@ -32,6 +32,7 @@
 		870746DB2AB8ABA100837481 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 870746C82AB8ABA100837481 /* SimpleLineIcons.ttf */; };
 		870746DC2AB8ABA100837481 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 870746C92AB8ABA100837481 /* FontAwesome6_Brands.ttf */; };
 		870746DD2AB8ABA100837481 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 870746CA2AB8ABA100837481 /* MaterialIcons.ttf */; };
+		87EB79CB2AD9C988003158E4 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 87EB79CA2AD9C988003158E4 /* circle.png */; };
 		E7F501DD0C4D86E806735F15 /* libPods-afangastathur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC466E338C465164D08959F /* libPods-afangastathur.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		870746C82AB8ABA100837481 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		870746C92AB8ABA100837481 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		870746CA2AB8ABA100837481 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		87EB79CA2AD9C988003158E4 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/circle.png; sourceTree = "<group>"; };
 		975467FAA53EF8CE8F1A5D88 /* Pods-afangastathur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afangastathur.release.xcconfig"; path = "Target Support Files/Pods-afangastathur/Pods-afangastathur.release.xcconfig"; sourceTree = "<group>"; };
 		AAE542088A50D0ACA4F4EE8F /* Pods-afangastathur-afangastathurTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afangastathur-afangastathurTests.release.xcconfig"; path = "Target Support Files/Pods-afangastathur-afangastathurTests/Pods-afangastathur-afangastathurTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -130,6 +132,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				87EB79CA2AD9C988003158E4 /* circle.png */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = afangastathur;
@@ -234,6 +237,7 @@
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
 			name = afangastathurTests;
+			productName = afangastathurTests;
 			productReference = 00E356EE1AD99517003FC87E /* afangastathurTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -322,6 +326,7 @@
 				870746DB2AB8ABA100837481 /* SimpleLineIcons.ttf in Resources */,
 				870746D92AB8ABA100837481 /* EvilIcons.ttf in Resources */,
 				870746CC2AB8ABA100837481 /* Octicons.ttf in Resources */,
+				87EB79CB2AD9C988003158E4 /* circle.png in Resources */,
 				870746D72AB8ABA100837481 /* FontAwesome.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				870746D12AB8ABA100837481 /* MaterialCommunityIcons.ttf in Resources */,
