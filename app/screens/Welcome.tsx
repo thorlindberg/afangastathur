@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Text from '../components/Text/Text';
-// import List from '../components/List/List';
+import List from '../components/List/List';
 import {useDispatch} from 'react-redux';
 import {closeModal} from '../store/modalSlice';
 import {useTheme} from '../theme/useTheme';
@@ -52,7 +52,7 @@ const Welcome = () => {
           {titleText}
         </Text>
       </Container>
-      {/* <List /> */}
+      <List />
       <Button
         color={theme.accentColor}
         text="Continue"
