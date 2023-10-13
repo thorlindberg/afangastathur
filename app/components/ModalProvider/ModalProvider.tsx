@@ -50,7 +50,7 @@ const ModalProvider = ({children}: ModalProviderProps) => {
       toValue:
         modalState.isPresented && modalState.detent !== 'small'
           ? (1 / Dimensions.get('window').height) *
-            (Dimensions.get('window').height - (safeAreaInsets.top + 14) * 2)
+            (Dimensions.get('window').height - safeAreaInsets.top * 2)
           : 1,
       duration: 250,
       useNativeDriver: false,

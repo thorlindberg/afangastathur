@@ -15,7 +15,7 @@ const useStyle = detent => {
     },
     safeAreaModal: {
       flex: 1,
-      marginTop: detent === 'medium' ? safeAreaInsets.top + 28 : 0,
+      marginTop: detent === 'medium' ? safeAreaInsets.top + 12 : 0,
     },
   });
 };
