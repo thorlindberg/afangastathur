@@ -13,8 +13,7 @@ const useAboutHandler = () => {
   const icon = require('../assets/images/appicon.png');
 
   const openAppStoreReview = useCallback(() => {
-    // Replace 'https://www.google.com' with the actual App Store URL for your app
-    const appStoreURL = 'https://www.example.com/app-store-url';
+    const appStoreURL = 'https://apps.apple.com/app/id6466740299';
     browserHandler(appStoreURL);
   }, []);
 
