@@ -152,13 +152,14 @@
         },
         {
             "email": "info@sumac.is",
-            "phone": "+354 519 7676",
+            "phone": "+354 537 9900",
             "url": "https://www.sumac.is/",
             "image": "https://firebasestorage.googleapis.com/v0/b/dineout-prod.appspot.com/o/restaurants%2Fsumacgrill%2FSumac_800x800_01.jpg?alt=media&token=78bdcb2c-8577-4e06-b4da-4a7bcbf4c993",
             "title": "Sumac Restaurant",
-            "description": "Sumac is a delightful Middle Eastern restaurant located in Reykjavik, Iceland. We offer a wide range of delicious dishes inspired by the flavors of the Middle East.",
+            "description": "Inspired by the nostalgic atmosphere of the city of Beirut, Sumac is a place where locals and visitors can enjoy delicious Middle Eastern Cuisine and handcrafted Mediterranean cocktails.",
             "latitude": 64.1466,
             "longitude": -21.9392,
+            "hours": "Tuesday-Saturday from 17:30",
             "category": "Food",
             "delta": 0.2
         }        
