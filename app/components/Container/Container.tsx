@@ -76,7 +76,7 @@ const Container = ({
         </ScrollView>
       </View>
     ) : (
-      <View>{childrenWithSeparators}</View>
+      <View style={styles.container}>{childrenWithSeparators}</View>
     )
   ) : scrollable ? (
     <View style={{paddingBottom: safeAreaInsets.bottom}}>

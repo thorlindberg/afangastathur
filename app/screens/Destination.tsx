@@ -10,12 +10,9 @@ import Slide from '../components/Slide/Slide';
 
 const Destination = ({location}: PinProps) => {
   const {theme} = useTheme();
-  const contactText = 'Contact information';
-  const contactDescriptionText =
-    'Reach out to this destination with this contact information.';
 
   return (
-    <Container scrollable divider scaling={1} gap={'small'}>
+    <Container scrollable divider scaling={1}>
       <Container padding={false}>
         <Container padding={false} gap={'small'}>
           <Text size="title" bold color={theme.primaryColor}>
@@ -28,7 +25,7 @@ const Destination = ({location}: PinProps) => {
         <HeaderImage source={{uri: location.image}} />
         <Text color={theme.primaryColor}>{location.description}</Text>
         <Button
-          color={theme.accentColor}
+          color={theme.primaryColor}
           text="Get directions in Google Maps"
           icon="map"
           onPress={() => {
@@ -54,56 +51,65 @@ const Destination = ({location}: PinProps) => {
           }}
         />
       </Container>
-      <Container padding={false}>
-        <Text size="large" bold color={theme.primaryColor}>
-          Artifacts
-        </Text>
-        <Container padding={false} scaling={1} gap={'small'}>
-          <Button color="#646464" />
-          <Text italic color={theme.primaryColor}>
-            Artifact name
+      {location.artifact && (
+        <Container padding={false}>
+          <Text size="large" bold color={theme.primaryColor}>
+            Artifacts
           </Text>
+          <Container padding={false} scaling={1} gap={'small'}>
+            <Button color="#646464" />
+            <Text italic color={theme.primaryColor}>
+              Artifact name
+            </Text>
+          </Container>
         </Container>
-        <Container padding={false} scaling={1} gap={'small'}>
-          <Button color="#646464" />
-          <Text italic color={theme.primaryColor}>
-            Artifact name
+      )}
+      {location.hours && (
+        <Container padding={false}>
+          <Text size="large" bold color={theme.primaryColor}>
+            Opening hours
           </Text>
+          <Text color={theme.primaryColor}>{location.hours}</Text>
         </Container>
-      </Container>
-      <Container padding={false}>
-        <Text size="large" bold color={theme.primaryColor}>
-          Opening hours
-        </Text>
-        <Container padding={false} scaling={1} gap={'small'}>
-          <Button color="#646464" />
-          <Text italic color={theme.primaryColor}>
-            Hours
+      )}
+      {(location.phone || location.email) && (
+        <Container padding={false}>
+          <Text size="large" bold color={theme.primaryColor}>
+            Contact information
           </Text>
+          {location.phone && (
+            <Slide
+              onPress={() => {
+                Linking.openURL(`telprompt:${location.phone}`);
+              }}
+              color="#158020"
+              text={`Slide to call ${location.phone}`}
+              icon="phone"
+            />
+          )}
+          {location.email && (
+            <Button
+              color={theme.accentColor}
+              text={location.email}
+              icon="mail"
+              onPress={() => {
+                Linking.openURL(`mailto:${location.email}`);
+              }}
+            />
+          )}
         </Container>
-      </Container>
+      )}
       <Container padding={false} edges={['bottom']}>
         <Text size="large" bold color={theme.primaryColor}>
-          {contactText}
+          Learn more
         </Text>
-        <Text color={theme.primaryColor}>{contactDescriptionText}</Text>
-        <Slide
-          onPress={() => {
-            Linking.openURL(`telprompt:${location.phone}`);
-          }}
-          color="#158020"
-          text={`Slide to call ${location.phone}`}
-          icon="phone"
-        />
-        <Button
-          color={theme.accentColor}
-          text={location.email}
-          icon="mail"
-          onPress={() => {
-            Linking.openURL(`mailto:${location.email}`);
-          }}
-        />
-        <Button color="#646464" text={location.url} icon="arrow-outward" />
+        {location.url && (
+          <Button
+            color={theme.primaryColor}
+            text={location.url}
+            icon="arrow-outward"
+          />
+        )}
       </Container>
     </Container>
   );

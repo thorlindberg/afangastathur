@@ -6,8 +6,10 @@ export interface LocationProps {
   latitude: number;
   longitude: number;
   category: string;
-  phone: string;
-  email: string;
+  phone?: string;
+  email?: string;
+  hours?: string;
+  artifact?: string;
 }
 
 export interface PinProps {

@@ -17,7 +17,7 @@ const useStyle = (
     },
     titleBar: {
       flex: 0,
-      padding: 16,
+      padding: 14,
       flexDirection: 'row',
       justifyContent: icon ? 'space-between' : 'center',
       alignItems: 'center',
