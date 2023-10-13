@@ -1,0 +1,166 @@
+{
+    "app": {
+        "name": "Áfangastaður",
+        "version": "Version 1.0.0",
+        "legal": "Please carefully read and understand the following terms and conditions before using [Your Application Name] (the \"Application\"). By using the Application, you agree to be bound by these terms and conditions, and you acknowledge that your use of the Application is subject to compliance with applicable laws and regulations. If you do not agree to these terms and conditions, please do not use the Application.\n\n1. Accuracy of Information:\n\nThe Application utilizes Google Maps services to provide location-based information and directions. While we strive to provide accurate and up-to-date information, we cannot guarantee the accuracy, completeness, or reliability of the information provided by the Application. You acknowledge that the maps and data provided may not always reflect current conditions, such as road closures, construction, or traffic incidents.\n\n2. Reliance on Information:\n\nYou are responsible for exercising your own judgment and discretion when using the information provided by the Application. We do not accept any liability for decisions made based on the information obtained through the Application. You should always exercise caution, follow traffic laws, and be aware of your surroundings when using the Application for navigation or location-related purposes.\n\n3. User Responsibilities:\n\nYou are solely responsible for your use of the Application and for any consequences that may result from such use. You agree not to use the Application in a way that violates any applicable laws, regulations, or third-party rights. Additionally, you agree not to use the Application in a manner that may cause harm or disrupt the functionality of the Application or the Google Maps service.\n\n4. Third-Party Services and Content:\n\nThe Application may provide access to third-party services, websites, or content. We do not endorse or assume responsibility for the accuracy, legality, or availability of any third-party services or content. Your use of third-party services or content is at your own risk, and you should review their terms and privacy policies.\n\n5. Privacy and Data Collection:\n\nThe Application may collect and use your location and other personal information to provide its services. We are committed to protecting your privacy, and we will handle your data in accordance with our Privacy Policy. By using the Application, you consent to the collection and use of your data as described in our Privacy Policy.\n\n6. No Warranty and Liability Limitation:\n\nThe Application is provided \"as is\" and \"as available\" without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that the Application will be error-free, uninterrupted, or that it will meet your specific requirements.\n\nTo the fullest extent permitted by applicable law, we shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or in any way connected with your use of the Application, even if we have been advised of the possibility of such damages.\n\n7. Changes to the Application and Terms:\n\nWe reserve the right to modify or discontinue the Application at any time without prior notice. We may also update these terms and conditions from time to time. You are responsible for reviewing the most current version of these terms, and your continued use of the Application constitutes your acceptance of any changes.\n\n8. Contact Information:\n\nIf you have any questions or concerns about these terms and conditions or the Application, please contact us at [Contact Email Address].\n\nBy using the Application, you agree to abide by these terms and conditions. If you do not agree with any part of these terms, please refrain from using the Application.\n\n[Your Company Name]\n\n[Address]\n\n[City, State, ZIP Code]\n\n[Website URL]\n\n[Contact Email Address]\n\n[Date]"
+    },
+    "categories": [
+        {
+            "name": "City",
+            "selection": "city-variant",
+            "icon": "city-variant-outline",
+            "type": "material-community",
+            "size": 20
+        },
+        {
+            "name": "Food",
+            "selection": "restaurant",
+            "icon": "restaurant-outline",
+            "type": "ionicon",
+            "size": 20
+        },
+        {
+            "name": "Gas",
+            "selection": "car",
+            "icon": "car-outline",
+            "type": "ionicon",
+            "size": 20
+        },
+        {
+            "name": "Store",
+            "selection": "cart",
+            "icon": "cart-outline",
+            "type": "material-community",
+            "size": 20
+        },
+        {
+            "name": "Explore",
+            "selection": "map",
+            "icon": "map-outline",
+            "type": "ionicon",
+            "size": 20
+        }
+    ],
+    "locations": [
+        {
+            "email": "john.appleseed@apple.com",
+            "phone": "+4550306170",
+            "url": "https://en.wikipedia.org/wiki/Reykjavík",
+            "image": "https://icelandtrippers.com/wp-content/uploads/2021/07/northern-lights-in-reykjavik-hallgrimskirkja.jpg",
+            "title": "Reykjavik",
+            "description": "The capital and largest city of Iceland, known for its stunning natural surroundings, including geothermal springs, volcanic landscapes, and iconic landmarks. It offers a vibrant cultural scene with museums, galleries, and a thriving music scene. Visitors can enjoy a variety of outdoor activities, from hiking to relaxing in the Blue Lagoon.",
+            "latitude": 64.1466,
+            "longitude": -21.9426,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Kópavogur",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Kópavogur_Smárinn.JPG",
+            "title": "Kopavogur",
+            "description": "The second-largest city in Iceland, located in the Reykjavik Capital Region. It offers a strong cultural scene, theaters, art galleries, and a vibrant nightlife. The city's coastal location provides stunning views of the surrounding landscapes and the North Atlantic Ocean.",
+            "latitude": 64.1026,
+            "longitude": -21.8819,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Hafnarfjörður",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hafnarfjörður%2C_Iceland_2017.jpg/500px-Hafnarfjörður%2C_Iceland_2017.jpg",
+            "title": "Hafnarfjordur",
+            "description": "A charming port town in the Reykjavik Capital Region of Iceland, known for its picturesque harbor and vibrant cultural scene. The historic center features colorful houses, quaint streets, and a lively atmosphere. The town hosts various festivals and events celebrating its rich maritime heritage and folklore.",
+            "latitude": 64.0671,
+            "longitude": -21.9427,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Akureyri",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Akureyri_-_Skapti_Hallgrímsson.jpg/1920px-Akureyri_-_Skapti_Hallgrímsson.jpg",
+            "title": "Akureyri",
+            "description": "The largest town in northern Iceland, situated on the shores of the Eyjafjörður fjord. It is often referred to as the 'Capital of the North' and is known for its stunning natural beauty. Akureyri offers a mix of cultural attractions, including museums, galleries, and a botanical garden.",
+            "latitude": 65.6889,
+            "longitude": -18.1055,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Reykjanesbær",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Reykjanesbær_2023_%28175814%29.jpg/1920px-Reykjanesbær_2023_%28175814%29.jpg",
+            "title": "Reykjanesbær",
+            "description": "A municipality in southwestern Iceland, known for its proximity to the Keflavik International Airport and the stunning Reykjanes Peninsula. The town offers a blend of modern amenities and natural beauty, with attractions like the Blue Lagoon geothermal spa and dramatic landscapes.",
+            "latitude": 63.9983,
+            "longitude": -22.5615,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Garðabær",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Garðakirkja.jpg/1920px-Garðakirkja.jpg",
+            "title": "Garðabaer",
+            "description": "A suburb of Reykjavik, located in the Reykjavik Capital Region. Known for its family-friendly atmosphere and high-quality schools, the town offers various parks, recreational areas, and sports facilities. It's also home to cultural events and community festivals celebrating Icelandic traditions and arts.",
+            "latitude": 64.0855,
+            "longitude": -21.9546,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Mosfellsbær",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Mosfellsbær_overview.JPG/1920px-Mosfellsbær_overview.JPG",
+            "title": "Mosfellsbaer",
+            "description": "A municipality in the Reykjavik Capital Region, nestled between the city of Reykjavik and the scenic landscapes of western Iceland. The town offers a peaceful and picturesque setting, with easy access to hiking trails, hot springs, and geological wonders. It's known for its literary history and cultural sites.",
+            "latitude": 64.1514,
+            "longitude": -21.6876,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Akranes",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Akranes_loftmynd.jpg",
+            "title": "Akranes",
+            "description": "A coastal town in western Iceland, situated along the shores of the Faxaflói Bay. Known for its maritime heritage and scenic surroundings, it offers a mix of cultural attractions, including museums, galleries, and historic landmarks. The Akranes Lighthouse, located on a picturesque peninsula, is a popular destination for visitors.",
+            "latitude": 64.3153,
+            "longitude": -22.0909,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "",
+            "phone": "",
+            "url": "https://en.wikipedia.org/wiki/Selfoss_(town)",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Selfoss%2C_Árnessýsla%2C_Iceland.jpg/1920px-Selfoss%2C_Árnessýsla%2C_Iceland.jpg",
+            "title": "Selfoss",
+            "description": "A charming town in southern Iceland, situated on the banks of the Ölfusá River. Known for its natural beauty, including waterfalls, hot springs, and scenic hiking trails. Selfoss offers a range of cultural activities, such as concerts, art exhibitions, and local festivals. It's also an excellent starting point for exploring the famous Golden Circle route.",
+            "latitude": 63.9339,
+            "longitude": -20.9973,
+            "category": "City",
+            "delta": 0.2
+        },
+        {
+            "email": "info@sumac.is",
+            "phone": "+354 519 7676",
+            "url": "https://www.sumac.is/",
+            "image": "https://firebasestorage.googleapis.com/v0/b/dineout-prod.appspot.com/o/restaurants%2Fsumacgrill%2FSumac_800x800_01.jpg?alt=media&token=78bdcb2c-8577-4e06-b4da-4a7bcbf4c993",
+            "title": "Sumac Restaurant",
+            "description": "Sumac is a delightful Middle Eastern restaurant located in Reykjavik, Iceland. We offer a wide range of delicious dishes inspired by the flavors of the Middle East.",
+            "latitude": 64.1466,
+            "longitude": -21.9392,
+            "category": "Food",
+            "delta": 0.2
+        }        
+    ]
+}
