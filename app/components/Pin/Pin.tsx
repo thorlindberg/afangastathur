@@ -19,7 +19,7 @@ const Pin = ({location}: PinProps) => {
         latitude: location.latitude,
         longitude: location.longitude,
       }}>
-      <Rounded radius={8} smooth style={styles.pinStyle}>
+      <Rounded radius={1000} smooth style={styles.pinStyle}>
         <View style={styles.pinStyle}>
           {!isLoaded && <ActivityIndicator size="small" color={'black'} />}
           <Image

@@ -15,7 +15,7 @@ const useStyle = (
   alignment: FlexAlignType = 'flex-start',
   justifying: JustifyContentType = 'flex-start',
   scaling = 1,
-  // divider = false,
+  divider = false,
   padding = true,
   gap = 'normal',
   edges = [],
@@ -34,7 +34,9 @@ const useStyle = (
       width: '100%',
       height: '100%',
       padding: padding ? 24 : 0,
-      paddingBottom: edges.includes('bottom')
+      paddingBottom: divider
+        ? 24
+        : edges.includes('bottom')
         ? safeAreaInsets.bottom + 24
         : padding
         ? scrollable

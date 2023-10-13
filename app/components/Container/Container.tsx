@@ -34,7 +34,7 @@ const Container = ({
     alignment,
     justifying,
     scaling,
-    // divider,
+    divider,
     padding,
     gap,
     edges,
@@ -43,14 +43,16 @@ const Container = ({
   const childrenWithSeparators = childrenArray.flatMap((child, index) => {
     if (index === childrenArray.length - 1) {
       return [
-        <View key={index} style={styles.container}>
+        <View key={`container ${index}`} style={styles.container}>
           {child}
         </View>,
       ];
     } else {
       return [
-        <View style={styles.container}>{child}</View>,
-        <View style={styles.dividerStyle} key={index} />,
+        <View key={`container ${index}`} style={styles.container}>
+          {child}
+        </View>,
+        <View key={`divider ${index}`} style={styles.dividerStyle} />,
       ];
     }
   });
@@ -67,7 +69,7 @@ const Container = ({
 
   return divider ? (
     scrollable ? (
-      <View style={{flex: scaling, paddingBottom: safeAreaInsets.bottom}}>
+      <View style={{paddingBottom: safeAreaInsets.bottom}}>
         <Animated.View style={{...styles.borderStyle, opacity}} />
         <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
           {childrenWithSeparators}

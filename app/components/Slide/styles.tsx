@@ -14,7 +14,7 @@ const useStyle = (
   return StyleSheet.create({
     toggleStyle: {
       backgroundColor: toggleColorWithOpacity,
-      borderRadius: 4,
+      borderRadius: 6,
       paddingHorizontal: 16,
       paddingVertical: 14,
       flexDirection: 'row',
