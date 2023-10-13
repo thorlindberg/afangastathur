@@ -15,7 +15,7 @@ const Destination = ({location}: PinProps) => {
     'Reach out to this destination with this contact information.';
 
   return (
-    <Container scrollable divider scaling={1}>
+    <Container scrollable divider scaling={1} gap={'small'}>
       <Container padding={false}>
         <Container padding={false} gap={'small'}>
           <Text size="title" bold color={theme.primaryColor}>
@@ -55,25 +55,35 @@ const Destination = ({location}: PinProps) => {
         />
       </Container>
       <Container padding={false}>
-        <Text size="large" color={theme.primaryColor}>
+        <Text size="large" bold color={theme.primaryColor}>
           Artifacts
         </Text>
-        <Button color="#646464" />
-        <Text italic color={theme.primaryColor}>
-          Artifact name
-        </Text>
-        <Button color="#646464" />
-        <Text italic color={theme.primaryColor}>
-          Artifact name
-        </Text>
+        <Container padding={false} scaling={1} gap={'small'}>
+          <Button color="#646464" />
+          <Text italic color={theme.primaryColor}>
+            Artifact name
+          </Text>
+        </Container>
+        <Container padding={false} scaling={1} gap={'small'}>
+          <Button color="#646464" />
+          <Text italic color={theme.primaryColor}>
+            Artifact name
+          </Text>
+        </Container>
       </Container>
       <Container padding={false}>
-        <Text italic color={theme.primaryColor}>
+        <Text size="large" bold color={theme.primaryColor}>
           Opening hours
         </Text>
+        <Container padding={false} scaling={1} gap={'small'}>
+          <Button color="#646464" />
+          <Text italic color={theme.primaryColor}>
+            Hours
+          </Text>
+        </Container>
       </Container>
-      <Container padding={false}>
-        <Text italic color={theme.primaryColor}>
+      <Container padding={false} edges={['bottom']}>
+        <Text size="large" bold color={theme.primaryColor}>
           {contactText}
         </Text>
         <Text color={theme.primaryColor}>{contactDescriptionText}</Text>
