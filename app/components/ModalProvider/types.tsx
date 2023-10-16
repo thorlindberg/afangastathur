@@ -1,30 +1,29 @@
-export interface ContextProps {
-  children?: React.ReactNode;
-  openModal: (content: ModalState) => void;
-  readModal: () => ModalState;
-  closeModal: () => void;
-  updateModal: <K extends keyof ModalState>(update: {
-    key: K;
-    value: ModalState[K];
-  }) => void;
+import {StyleProp, ViewStyle} from 'react-native';
+
+export interface ContextInterface {
+  modal: ModalState;
+  setModal: (value: ModalState) => void;
 }
 
-export type DetentProps = 'small' | 'medium' | 'large' | undefined;
+export interface ModalContextInterface {
+  children: React.ReactNode;
+}
+
+export interface RoundedProps {
+  children?: React.ReactNode;
+  style?: StyleProp<ViewStyle>;
+  radius: number;
+  smooth?: boolean;
+  borderWidth?: number;
+  borderColor?: string;
+}
+
+export type DetentProps = 'small' | 'medium' | 'large';
 
 export type ModalState = {
-  isPresented?: boolean;
-  detent?: DetentProps;
+  isPresented: boolean;
+  detent: DetentProps;
   node?: React.ReactNode;
-  backgroundColor?: string;
-  accentColor?: string;
-  cancellationText?: string;
-  confirmationText?: string;
-  confirmationAction?: () => void;
-  divider?: boolean;
-  dividerColor?: string;
-  title?: string;
-  icon?: string;
-  scrolled?: boolean;
 };
 
 export interface ModalProviderProps {

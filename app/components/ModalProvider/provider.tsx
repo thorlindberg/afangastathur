@@ -1,16 +1,24 @@
 import * as React from 'react';
 import {StatusBar, Modal, View, Animated, Dimensions} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import TitleBar from '../TitleBar/TitleBar';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import Rounded from '../Rounded/Rounded';
-import {ModalProviderProps} from './types';
+import {ModalProviderProps, RoundedProps} from './types';
 import useStyle from './styles';
-import {ModalContext} from './context';
+import ModalContext from './context';
 import {useModal} from './context';
+import MaskedView from '@react-native-masked-view/masked-view';
+import Squircle from 'react-native-squircle';
 
-const ModalProvider = ({children, backgroundColor}: ModalProviderProps) => {
-  const {readModal, closeModal} = useModal();
+const Rounded = ({children, radius, style}: RoundedProps) => {
+  return (
+    <MaskedView style={style} maskElement={<Squircle borderRadius={radius} />}>
+      {children}
+    </MaskedView>
+  );
+};
+
+const Provider = ({children, backgroundColor}: ModalProviderProps) => {
+  const {readModal} = useModal();
   const modalState = readModal();
   const safeAreaInsets = useSafeAreaInsets();
   const styles = useStyle(modalState.detent, backgroundColor);
@@ -52,58 +60,48 @@ const ModalProvider = ({children, backgroundColor}: ModalProviderProps) => {
   }, [scaleY, safeAreaInsets.top, modalState.isPresented, modalState.detent]);
 
   return (
-    <ModalContext>
-      <View style={styles.containerStyle}>
+    <View style={styles.containerStyle}>
+      <Animated.View
+        style={
+          modalState.isPresented && modalState.detent !== 'small'
+            ? styles.safeAreaPresented
+            : styles.safeAreaDefault
+        }>
         <Animated.View
-          style={
-            modalState.isPresented && modalState.detent !== 'small'
-              ? styles.safeAreaPresented
-              : styles.safeAreaDefault
-          }>
-          <Animated.View
-            style={{
-              transform: [{scaleX: scaleX}, {scaleY: scaleY}],
-              opacity,
-            }}>
-            <Rounded radius={8} smooth>
-              {children}
-            </Rounded>
-          </Animated.View>
+          style={{
+            transform: [{scaleX: scaleX}, {scaleY: scaleY}],
+            opacity,
+          }}>
+          <Rounded radius={8}>{children}</Rounded>
         </Animated.View>
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalState.isPresented}>
-          <SafeAreaView style={styles.safeAreaModal}>
-            <StatusBar
-              animated
-              barStyle={
-                modalState.isPresented && modalState.detent === 'large'
-                  ? 'dark-content'
-                  : 'light-content'
-              }
-            />
-            <View style={styles.bufferStyle} />
-            <Rounded radius={8} smooth style={styles.maskStyle}>
-              <TitleBar
-                backgroundColor={modalState.backgroundColor}
-                cancellationColor={modalState.accentColor}
-                cancellationText={modalState.cancellationText}
-                cancellationAction={closeModal}
-                confirmationColor={modalState.accentColor}
-                confirmationText={modalState.confirmationText}
-                confirmationAction={modalState.confirmationAction}
-                titleColor={'black'}
-                titleText={modalState.title}
-                icon={modalState.icon}
-                detent={modalState.detent}
-                scrolled={modalState.scrolled}>
-                {modalState.node}
-              </TitleBar>
-            </Rounded>
-          </SafeAreaView>
-        </Modal>
-      </View>
+      </Animated.View>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalState.isPresented}>
+        <SafeAreaView style={styles.safeAreaModal}>
+          <StatusBar
+            animated
+            barStyle={
+              modalState.isPresented && modalState.detent === 'large'
+                ? 'dark-content'
+                : 'light-content'
+            }
+          />
+          <View style={styles.bufferStyle} />
+          <Rounded radius={8} style={styles.maskStyle}>
+            {modalState.node}
+          </Rounded>
+        </SafeAreaView>
+      </Modal>
+    </View>
+  );
+};
+
+const ModalProvider = ({children, backgroundColor}: ModalProviderProps) => {
+  return (
+    <ModalContext>
+      <Provider children={children} backgroundColor={backgroundColor} />
     </ModalContext>
   );
 };

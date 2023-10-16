@@ -1,50 +1,56 @@
-import React, {createContext, useState, useContext} from 'react';
-import {ModalState, ContextProps} from './types';
+import React from 'react';
+import {ContextInterface, ModalContextInterface, ModalState} from './types';
 
-const Context = createContext<ContextProps>({
-  openModal: () => {},
-  readModal: () => initialState,
-  updateModal: () => {},
-  closeModal: () => {},
-});
+const Context = React.createContext({} as ContextInterface);
 
 const initialState: ModalState = {
   isPresented: false,
   detent: 'medium',
 };
 
-export const useModal = () => useContext(Context);
+const ModalContext = ({children}: ModalContextInterface): JSX.Element => {
+  const [modal, setModal] = React.useState(initialState);
+  return (
+    <Context.Provider value={{modal, setModal}}>{children}</Context.Provider>
+  );
+};
 
-export const ModalContext = ({children}: React.PropsWithChildren<{}>) => {
-  const [modalContent, setModalContent] = useState(initialState);
+export default ModalContext;
 
-  const openModal = () => {
-    setModalContent({
-      ...modalContent,
+export const useModal = () => {
+  const {modal, setModal} = React.useContext(Context);
+
+  const openModal = (content: ModalState) => {
+    console.log('[LOG] Opening modal with content:', content);
+    setModal({
+      ...modal,
+      ...content,
       isPresented: true,
     });
   };
 
   const readModal = () => {
-    return modalContent;
+    console.log('[LOG] Fetching modal state.');
+    return modal;
   };
 
-  const updateModal = ({key, value}: {key: string; value: any}) => {
-    setModalContent({
-      ...modalContent,
+  const updateModal: <K extends keyof ModalState>(update: {
+    key: K;
+    value: ModalState[K];
+  }) => void = ({key, value}) => {
+    console.log(
+      `[LOG] Updating modal state with value ${value} for key ${key}`,
+    );
+    setModal({
+      ...modal,
       [key]: value,
     });
   };
 
   const closeModal = () => {
-    setModalContent(initialState);
+    console.log('[LOG] Closing modal.');
+    setModal(initialState);
   };
 
-  return (
-    <Context.Provider value={{openModal, readModal, updateModal, closeModal}}>
-      {children}
-    </Context.Provider>
-  );
+  return {modal, openModal, readModal, updateModal, closeModal};
 };
-
-export default ModalContext;
