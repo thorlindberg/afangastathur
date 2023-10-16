@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Provider} from 'react-redux';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import ModalProvider from './app/components/ModalProvider/ModalProvider';
+import ModalProvider from './app/components/ModalProvider/provider';
 import {ActionSheetProvider} from '@expo/react-native-action-sheet';
 import {STORYBOOK_MODE} from '@env';
 import {store} from './app/store/store';

@@ -1,21 +1,17 @@
 import * as React from 'react';
 import Text from '../components/Text/Text';
 import List from '../components/List/List';
-import {useDispatch} from 'react-redux';
-import {closeModal} from '../store/modalSlice';
 import {useTheme} from '../theme/useTheme';
 import Button from '../components/Button/Button';
 import Container from '../components/Container/Container';
 import Rounded from '../components/Rounded/Rounded';
 import {Image} from 'react-native';
+import {useModal} from '../components/ModalProvider/context';
 
 const iconURL = require('../assets/images/appicon.png');
 
 const Welcome = () => {
-  const dispatch = useDispatch();
-  const welcomeHandler = () => {
-    dispatch(closeModal());
-  };
+  const {closeModal} = useModal();
   const {theme} = useTheme();
   const bodyText = 'Welcome to';
   const titleText = 'Áfangastaður';
@@ -53,11 +49,7 @@ const Welcome = () => {
         </Text>
       </Container>
       <List />
-      <Button
-        color={theme.accentColor}
-        text="Continue"
-        onPress={welcomeHandler}
-      />
+      <Button color={theme.accentColor} text="Continue" onPress={closeModal} />
     </Container>
   );
 };

@@ -2,9 +2,8 @@ import * as React from 'react';
 import {Animated, ScrollView, View} from 'react-native';
 import useStyle from './styles';
 import ContainerProps from './types';
-import {useDispatch} from 'react-redux';
-import {updateModal} from '../../store/modalSlice';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useModal} from '../ModalProvider/context';
 
 const Container = ({
   children,
@@ -17,8 +16,8 @@ const Container = ({
   gap = 'normal',
   edges,
 }: ContainerProps) => {
+  const {updateModal} = useModal();
   const safeAreaInsets = useSafeAreaInsets();
-  const dispatch = useDispatch();
   const [scrolled, setScrolled] = React.useState(false);
   const opacity = React.useRef(new Animated.Value(0)).current;
   React.useEffect(() => {
@@ -61,9 +60,9 @@ const Container = ({
     const offsetY = event.nativeEvent.contentOffset.y;
     setScrolled(offsetY > 0);
     if (offsetY > 120) {
-      dispatch(updateModal({key: 'scrolled', value: true}));
+      updateModal({key: 'scrolled', value: true});
     } else {
-      dispatch(updateModal({key: 'scrolled', value: false}));
+      updateModal({key: 'scrolled', value: false});
     }
   };
 

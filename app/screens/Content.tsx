@@ -8,10 +8,10 @@ import {View, StyleSheet, Animated} from 'react-native';
 
 const Content = () => {
   const dataState = useSelector((state: RootState) => state.data.state);
-  const handleWelcome = useWelcomeHandler();
+  const welcomeHandler = useWelcomeHandler();
 
   React.useEffect(() => {
-    handleWelcome();
+    welcomeHandler();
   });
 
   const opacity = React.useRef(new Animated.Value(0)).current;
