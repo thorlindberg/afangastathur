@@ -1,6 +1,6 @@
 export type ButtonProps = {
   onPress?: () => void;
-  text: string;
+  text?: string;
   color: string;
   icon?: string;
   active?: boolean;
