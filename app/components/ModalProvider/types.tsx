@@ -1,8 +1,8 @@
 import {StyleProp, ViewStyle} from 'react-native';
 
 export interface ContextInterface {
-  modal: ModalState;
-  setModal: (value: ModalState) => void;
+  state: ModalState;
+  setState: (value: ModalState) => void;
 }
 
 export interface ModalContextInterface {

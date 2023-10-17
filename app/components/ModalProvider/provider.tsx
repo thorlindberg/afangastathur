@@ -3,7 +3,7 @@ import {StatusBar, Modal, View, Animated, Dimensions} from 'react-native';
 import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ModalProviderProps, RoundedProps} from './types';
 import useStyle from './styles';
-import ModalContext, {useModal} from './context';
+import {ModalContext, useModal} from './context';
 import MaskedView from '@react-native-masked-view/masked-view';
 import Squircle from 'react-native-squircle';
 

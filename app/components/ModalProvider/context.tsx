@@ -8,49 +8,37 @@ const initialState: ModalState = {
   detent: 'medium',
 };
 
-const ModalContext = ({children}: ModalContextInterface): JSX.Element => {
-  const [modal, setModal] = React.useState(initialState);
+export const ModalContext = ({children}: ModalContextInterface): JSX.Element => {
+  const [state, setState] = React.useState(initialState);
   return (
-    <Context.Provider value={{modal, setModal}}>{children}</Context.Provider>
+    <Context.Provider value={{state, setState}}>{children}</Context.Provider>
   );
 };
 
-export default ModalContext;
-
 export const useModal = () => {
-  const {modal, setModal} = React.useContext(Context);
+  const {state, setState} = React.useContext(Context);
 
   const openModal = (content: ModalState) => {
-    console.log('[LOG] Opening modal with content:', content);
-    setModal({
-      ...modal,
+    setState({
+      ...state,
       ...content,
       isPresented: true,
     });
   };
 
-  const readModal = () => {
-    console.log('[LOG] Fetching modal state.');
-    return modal;
-  };
+  const readModal = () => state;
 
   const updateModal: <K extends keyof ModalState>(update: {
     key: K;
     value: ModalState[K];
   }) => void = ({key, value}) => {
-    console.log(
-      `[LOG] Updating modal state with value ${value} for key ${key}`,
-    );
-    setModal({
-      ...modal,
+    setState({
+      ...state,
       [key]: value,
     });
   };
 
-  const closeModal = () => {
-    console.log('[LOG] Closing modal.');
-    setModal(initialState);
-  };
+  const closeModal = () => setState(initialState);
 
-  return {modal, openModal, readModal, updateModal, closeModal};
+  return {state, openModal, readModal, updateModal, closeModal};
 };
