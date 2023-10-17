@@ -1,13 +1,14 @@
-import * as React from 'react';
+import React, {useRef, useEffect} from 'react';
 import {StatusBar, Modal, View, Animated, Dimensions} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {SafeAreaView, useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ModalProviderProps, RoundedProps} from './types';
 import useStyle from './styles';
-import ModalContext from './context';
-import {useModal} from './context';
+import ModalContext, {useModal} from './context';
 import MaskedView from '@react-native-masked-view/masked-view';
 import Squircle from 'react-native-squircle';
+
+const WINDOW_WIDTH = Dimensions.get('window').width;
+const WINDOW_HEIGHT = Dimensions.get('window').height;
 
 const Rounded = ({children, radius, style}: RoundedProps) => {
   return (
@@ -23,8 +24,8 @@ const Provider = ({children, backgroundColor}: ModalProviderProps) => {
   const safeAreaInsets = useSafeAreaInsets();
   const styles = useStyle(modalState.detent, backgroundColor);
 
-  const opacity = React.useRef(new Animated.Value(1)).current;
-  React.useEffect(() => {
+  const opacity = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
     Animated.timing(opacity, {
       toValue:
         modalState.isPresented && modalState.detent === 'medium' ? 0.88 : 1,
@@ -33,48 +34,50 @@ const Provider = ({children, backgroundColor}: ModalProviderProps) => {
     }).start();
   }, [modalState.detent, modalState.isPresented, opacity]);
 
-  const scaleX = React.useRef(new Animated.Value(1)).current;
-  React.useEffect(() => {
+  const scaleX = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
     Animated.timing(scaleX, {
       toValue:
         modalState.isPresented && modalState.detent !== 'small'
-          ? (1 / Dimensions.get('window').width) *
-            (Dimensions.get('window').width - 24 * 2)
+          ? (1 / WINDOW_WIDTH) * (WINDOW_WIDTH - 24 * 2)
           : 1,
       duration: 250,
       useNativeDriver: false,
     }).start();
   }, [modalState.detent, modalState.isPresented, scaleX]);
 
-  const scaleY = React.useRef(new Animated.Value(1)).current;
-  React.useEffect(() => {
+  const scaleY = useRef(new Animated.Value(1)).current;
+  useEffect(() => {
     Animated.timing(scaleY, {
       toValue:
         modalState.isPresented && modalState.detent !== 'small'
-          ? (1 / Dimensions.get('window').height) *
-            (Dimensions.get('window').height - safeAreaInsets.top * 2)
+          ? (1 / WINDOW_HEIGHT) * (WINDOW_HEIGHT - safeAreaInsets.top * 2)
           : 1,
       duration: 250,
       useNativeDriver: false,
     }).start();
   }, [scaleY, safeAreaInsets.top, modalState.isPresented, modalState.detent]);
 
+  const renderAnimatedView = () => (
+    <Animated.View
+      style={
+        modalState.isPresented && modalState.detent !== 'small'
+          ? styles.safeAreaPresented
+          : styles.safeAreaDefault
+      }>
+      <Animated.View
+        style={{
+          transform: [{scaleX: scaleX}, {scaleY: scaleY}],
+          opacity,
+        }}>
+        <Rounded radius={8}>{children}</Rounded>
+      </Animated.View>
+    </Animated.View>
+  );
+
   return (
     <View style={styles.containerStyle}>
-      <Animated.View
-        style={
-          modalState.isPresented && modalState.detent !== 'small'
-            ? styles.safeAreaPresented
-            : styles.safeAreaDefault
-        }>
-        <Animated.View
-          style={{
-            transform: [{scaleX: scaleX}, {scaleY: scaleY}],
-            opacity,
-          }}>
-          <Rounded radius={8}>{children}</Rounded>
-        </Animated.View>
-      </Animated.View>
+      {renderAnimatedView()}
       <Modal
         animationType="slide"
         transparent={true}
