@@ -16,8 +16,8 @@ let Root = function App() {
       <Provider store={store}>
         <ActionSheetProvider>
           <ThemeProvider>
-            <ScrollProvider debug>
-              <ModalProvider debug>
+            <ScrollProvider>
+              <ModalProvider>
                 <Content />
               </ModalProvider>
             </ScrollProvider>
