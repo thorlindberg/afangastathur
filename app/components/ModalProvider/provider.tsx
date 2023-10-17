@@ -101,9 +101,13 @@ const Provider = ({children, backgroundColor}: ModalProviderProps) => {
   );
 };
 
-const ModalProvider = ({children, backgroundColor}: ModalProviderProps) => {
+const ModalProvider = ({
+  children,
+  backgroundColor,
+  debug,
+}: ModalProviderProps) => {
   return (
-    <ModalContext>
+    <ModalContext debug={debug}>
       <Provider children={children} backgroundColor={backgroundColor} />
     </ModalContext>
   );

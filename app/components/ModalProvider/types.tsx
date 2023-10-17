@@ -3,10 +3,12 @@ import {StyleProp, ViewStyle} from 'react-native';
 export interface ContextInterface {
   state: ModalState;
   setState: (value: ModalState) => void;
+  log: (message: string) => void;
 }
 
 export interface ModalContextInterface {
   children: React.ReactNode;
+  debug?: boolean;
 }
 
 export interface RoundedProps {
@@ -29,4 +31,5 @@ export type ModalState = {
 export interface ModalProviderProps {
   children: React.ReactNode;
   backgroundColor?: string;
+  debug?: boolean;
 }

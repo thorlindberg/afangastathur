@@ -8,15 +8,27 @@ const initialState: ModalState = {
   detent: 'medium',
 };
 
-export const ModalContext = ({children}: ModalContextInterface): JSX.Element => {
+export const ModalContext = ({
+  children,
+  debug = false,
+}: ModalContextInterface): JSX.Element => {
   const [state, setState] = React.useState(initialState);
+
+  const log = (message: string) => {
+    if (debug) {
+      console.log(message);
+    }
+  };
+
   return (
-    <Context.Provider value={{state, setState}}>{children}</Context.Provider>
+    <Context.Provider value={{state, setState, log}}>
+      {children}
+    </Context.Provider>
   );
 };
 
 export const useModal = () => {
-  const {state, setState} = React.useContext(Context);
+  const {state, setState, log} = React.useContext(Context);
 
   const openModal = (content: ModalState) => {
     setState({
@@ -24,6 +36,7 @@ export const useModal = () => {
       ...content,
       isPresented: true,
     });
+    log('[LOG] ModalProvider has opened node.');
   };
 
   const readModal = () => state;
@@ -36,9 +49,15 @@ export const useModal = () => {
       ...state,
       [key]: value,
     });
+    log(
+      `[LOG] ModalProvider state updated with value: ${value}, for key: ${key}.`,
+    );
   };
 
-  const closeModal = () => setState(initialState);
+  const closeModal = () => {
+    setState(initialState);
+    log('[LOG] ModalProvider has closed modal.');
+  };
 
   return {state, openModal, readModal, updateModal, closeModal};
 };
