@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {Text, Animated, TouchableOpacity, View, Image} from 'react-native';
 import useStyle from './styles';
-import TitleBarProps from './types';
+import {TitleBarProps} from './types';
 import Rounded from '../Rounded/Rounded';
+import {useScroll} from '../ScrollProvider/context';
 
 const TitleBar = ({
   children,
@@ -17,8 +18,10 @@ const TitleBar = ({
   titleText,
   icon,
   detent,
-  scrolled,
 }: TitleBarProps) => {
+  const {getScroll, resetScroll} = useScroll();
+  const scrolled = getScroll('titlebar');
+
   const opacity = React.useRef(new Animated.Value(scrolled ? 1 : 0)).current;
   React.useEffect(() => {
     Animated.timing(opacity, {
@@ -37,40 +40,46 @@ const TitleBar = ({
     opacity,
   );
 
+  const animatedView = (
+    <Animated.View style={styles.middleStyle}>
+      {icon && (
+        <Rounded
+          radius={4}
+          smooth
+          style={{
+            width: 24,
+            height: 24,
+          }}>
+          <Image
+            source={icon}
+            style={{
+              width: 24,
+              height: 24,
+            }}
+            resizeMode="cover"
+          />
+        </Rounded>
+      )}
+      <Text style={styles.titleStyle} numberOfLines={1} ellipsizeMode="tail">
+        {titleText}
+      </Text>
+    </Animated.View>
+  );
+
   return (
     <View style={styles.containerStyle}>
       <View style={styles.titleBarStyle}>
         {cancellationText && (
-          <TouchableOpacity onPress={cancellationAction}>
+          <TouchableOpacity
+            onPress={() => {
+              cancellationAction();
+              resetScroll();
+            }}>
+            {/* resetScroll(); */}
             <Text style={styles.cancellationStyle}>{cancellationText}</Text>
           </TouchableOpacity>
         )}
-        <Animated.View style={styles.middleStyle}>
-          {icon && (
-            <Rounded
-              radius={4}
-              smooth
-              style={{
-                width: 24,
-                height: 24,
-              }}>
-              <Image
-                source={icon}
-                style={{
-                  width: 24,
-                  height: 24,
-                }}
-                resizeMode="cover"
-              />
-            </Rounded>
-          )}
-          <Text
-            style={styles.titleStyle}
-            numberOfLines={1}
-            ellipsizeMode="tail">
-            {titleText}
-          </Text>
-        </Animated.View>
+        {animatedView}
         {confirmationText && (
           <TouchableOpacity onPress={confirmationAction}>
             <Text style={styles.confirmationStyle}>{confirmationText}</Text>

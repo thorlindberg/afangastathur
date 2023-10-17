@@ -3,7 +3,7 @@ import {Animated, ScrollView, View} from 'react-native';
 import useStyle from './styles';
 import ContainerProps from './types';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {useModal} from '../ModalProvider/context';
+import {useScroll} from '../ScrollProvider/context';
 
 const Container = ({
   children,
@@ -16,10 +16,11 @@ const Container = ({
   gap = 'normal',
   edges,
 }: ContainerProps) => {
-  const {updateModal} = useModal();
+  const {getScroll, setScroll} = useScroll();
+  const scrolled = getScroll('divider');
   const safeAreaInsets = useSafeAreaInsets();
-  const [scrolled, setScrolled] = React.useState(false);
   const opacity = React.useRef(new Animated.Value(0)).current;
+
   React.useEffect(() => {
     Animated.timing(opacity, {
       toValue: scrolled ? 1 : 0,
@@ -58,11 +59,11 @@ const Container = ({
 
   const handleScroll = (event: {nativeEvent: {contentOffset: {y: number}}}) => {
     const offsetY = event.nativeEvent.contentOffset.y;
-    setScrolled(offsetY > 0);
+    setScroll('divider', offsetY > 0);
     if (offsetY > 120) {
-      updateModal({key: 'scrolled', value: true});
+      setScroll('titlebar', true);
     } else {
-      updateModal({key: 'scrolled', value: false});
+      setScroll('titlebar', false);
     }
   };
 
