@@ -4,7 +4,7 @@ import Text from '../components/Text/Text';
 import Slide from '../components/Slide/Slide';
 import {useTheme} from '../theme/useTheme';
 import TitleBar from '../components/TitleBar/TitleBar';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const Emergency = () => {
   const {closeModal} = useModal();

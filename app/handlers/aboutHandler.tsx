@@ -1,6 +1,6 @@
 import About from '../screens/About';
 import React from 'react';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const useAboutHandler = () => {
   const {openModal} = useModal();

@@ -6,7 +6,7 @@ import Button from '../components/Button/Button';
 import Container from '../components/Container/Container';
 import Rounded from '../components/Rounded/Rounded';
 import {Image} from 'react-native';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const iconURL = require('../assets/images/appicon.png');
 

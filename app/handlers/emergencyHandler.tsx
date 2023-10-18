@@ -1,6 +1,6 @@
 import React from 'react';
 import Emergency from '../screens/Emergency';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const useEmergencyHandler = () => {
   const {openModal} = useModal();

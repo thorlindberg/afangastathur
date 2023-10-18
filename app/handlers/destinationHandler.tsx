@@ -2,7 +2,7 @@ import Destination from '../screens/Destination';
 import React from 'react';
 import {PinProps} from '../components/Pin/types';
 import {Image} from 'react-native';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const useDestinationHandler = ({location}: PinProps) => {
   const {openModal} = useModal();

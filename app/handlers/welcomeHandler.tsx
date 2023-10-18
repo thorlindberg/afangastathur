@@ -2,7 +2,7 @@ import {useTheme} from '../theme/useTheme';
 import React from 'react';
 import Welcome from '../screens/Welcome';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const APP_OPENED_KEY = 'appOpened';
 

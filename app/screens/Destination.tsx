@@ -8,7 +8,7 @@ import {PinProps} from '../components/Pin/types';
 import {Linking, Share} from 'react-native';
 import Slide from '../components/Slide/Slide';
 import TitleBar from '../components/TitleBar/TitleBar';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const Destination = ({location}: PinProps) => {
   const {closeModal} = useModal();

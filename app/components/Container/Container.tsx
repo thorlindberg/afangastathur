@@ -3,7 +3,7 @@ import {Animated, ScrollView, View} from 'react-native';
 import useStyle from './styles';
 import ContainerProps from './types';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {useScroll} from '../ScrollProvider/context';
+import {useScroll} from 'react-native-scroll-provider';
 
 const Container = ({
   children,

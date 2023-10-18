@@ -10,7 +10,7 @@ import AppArt from '../components/AppArt/AppArt';
 import TitleBar from '../components/TitleBar/TitleBar';
 import browserHandler from '../handlers/browserHandler';
 import {useCallback} from 'react';
-import {useModal} from '../components/ModalProvider/context';
+import {useModal} from 'react-native-modal-provider';
 
 const iconURL = require('../assets/images/appicon.png');
 const artURL = require('../assets/images/IMG_7671.jpg');

@@ -3,7 +3,7 @@ import {Text, Animated, TouchableOpacity, View, Image} from 'react-native';
 import useStyle from './styles';
 import {TitleBarProps} from './types';
 import Rounded from '../Rounded/Rounded';
-import {useScroll} from '../ScrollProvider/context';
+import {useScroll} from 'react-native-scroll-provider';
 
 const TitleBar = ({
   children,
