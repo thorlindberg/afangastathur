@@ -18,41 +18,49 @@ const Welcome = () => {
 
   return (
     <Container
-      edges={['top', 'bottom']}
-      alignment="center"
+      scrollable
+      padding={false}
       style={{backgroundColor: theme.backgroundColor}}>
-      <Rounded
-        radius={16}
-        smooth
-        style={{
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: 72,
-          height: 72,
-        }}
-        borderWidth={1}
-        borderColor="white">
-        <Image
-          source={iconURL}
-          style={{
-            width: 72,
-            height: 72,
-            position: 'absolute',
-            backgroundColor: theme.primaryColor,
-          }}
-          resizeMode="cover"
+      <Container edges={['top', 'bottom']} alignment="center" gap="xlarge">
+        <Container alignment="center">
+          <Rounded
+            radius={16}
+            smooth
+            style={{
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 72,
+              height: 72,
+            }}
+            borderWidth={1}
+            borderColor="white">
+            <Image
+              source={iconURL}
+              style={{
+                width: 72,
+                height: 72,
+                position: 'absolute',
+                backgroundColor: theme.primaryColor,
+              }}
+              resizeMode="cover"
+            />
+          </Rounded>
+          <Container alignment="center" gap="small">
+            <Text size="large" color={theme.primaryColor}>
+              {bodyText}
+            </Text>
+            <Text size="title" bold color={theme.primaryColor}>
+              {titleText}
+            </Text>
+          </Container>
+        </Container>
+        <List />
+        <Button
+          color={theme.accentColor}
+          text="Continue"
+          onPress={closeModal}
         />
-      </Rounded>
-      <Container alignment="center" gap="small">
-        <Text size="large" color={theme.primaryColor}>
-          {bodyText}
-        </Text>
-        <Text size="title" bold color={theme.primaryColor}>
-          {titleText}
-        </Text>
       </Container>
-      <List />
-      <Button color={theme.accentColor} text="Continue" onPress={closeModal} />
     </Container>
   );
 };
