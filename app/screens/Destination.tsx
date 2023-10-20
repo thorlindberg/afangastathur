@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useCallback} from 'react';
 import Container from '../components/Container/Container';
 import Text from '../components/Text/Text';
 import {useTheme} from '../theme/useTheme';
@@ -9,6 +9,7 @@ import {Linking, Share} from 'react-native';
 import Slide from '../components/Slide/Slide';
 import TitleBar from '../components/TitleBar/TitleBar';
 import {useModal} from 'react-native-modal-provider';
+import browserHandler from '../handlers/browserHandler';
 
 const Destination = ({location}: PinProps) => {
   const {closeModal} = useModal();
@@ -26,6 +27,11 @@ const Destination = ({location}: PinProps) => {
       console.error('[ERROR] Could not share:', error);
     }
   };
+
+  const openURL = useCallback(() => {
+    const linkURL = location.url;
+    browserHandler(linkURL);
+  }, [location.url]);
 
   return (
     <TitleBar
@@ -135,6 +141,7 @@ const Destination = ({location}: PinProps) => {
               color={theme.primaryColor}
               text={location.url}
               icon="arrow-outward"
+              onPress={openURL}
             />
           )}
         </Container>
