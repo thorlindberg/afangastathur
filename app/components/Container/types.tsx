@@ -1,4 +1,5 @@
 import {FlexAlignType} from 'react-native';
+import {StyleProp, ViewStyle} from 'react-native';
 
 export type JustifyContentType =
   | 'flex-start'
@@ -18,6 +19,7 @@ interface ContainerProps {
   padding?: boolean;
   gap?: 'normal' | 'small' | 'large' | 'xlarge';
   edges?: ('top' | 'bottom')[];
+  style?: StyleProp<ViewStyle>;
 }
 
 export default ContainerProps;

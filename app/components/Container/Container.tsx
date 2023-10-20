@@ -15,6 +15,7 @@ const Container = ({
   padding = true,
   gap = 'normal',
   edges,
+  style,
 }: ContainerProps) => {
   const {getScroll, setScroll} = useScroll();
   const scrolled = getScroll('divider');
@@ -69,24 +70,24 @@ const Container = ({
 
   return divider ? (
     scrollable ? (
-      <View style={{paddingBottom: safeAreaInsets.bottom}}>
+      <View style={{...style, paddingBottom: safeAreaInsets.bottom}}>
         <Animated.View style={{...styles.borderStyle, opacity}} />
         <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
           {childrenWithSeparators}
         </ScrollView>
       </View>
     ) : (
-      <View style={styles.container}>{childrenWithSeparators}</View>
+      <View style={[style, styles.container]}>{childrenWithSeparators}</View>
     )
   ) : scrollable ? (
-    <View style={{paddingBottom: safeAreaInsets.bottom}}>
+    <View style={{...style, paddingBottom: safeAreaInsets.bottom}}>
       <Animated.View style={{...styles.borderStyle, opacity}} />
       <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
         <View style={styles.container}>{children}</View>
       </ScrollView>
     </View>
   ) : (
-    <View style={styles.container}>{children}</View>
+    <View style={[style, styles.container]}>{children}</View>
   );
 };
 
