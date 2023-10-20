@@ -5,13 +5,13 @@ import LinearGradient from 'react-native-linear-gradient';
 import Text from '../Text/Text';
 import {Icon} from '@rneui/themed';
 import {useTheme} from '../../theme/useTheme';
-import useEmergencyHandler from '../../handlers/emergencyHandler';
+// import useEmergencyHandler from '../../handlers/emergencyHandler';
 import useAboutHandler from '../../handlers/aboutHandler';
 
 const Header = ({showActions, citySelection}) => {
   const {theme} = useTheme();
   const styles = useStyle();
-  const emergencyHandler = useEmergencyHandler();
+  // const emergencyHandler = useEmergencyHandler();
   const aboutHandler = useAboutHandler();
   return (
     <LinearGradient
@@ -30,6 +30,7 @@ const Header = ({showActions, citySelection}) => {
           </Text>
         </TouchableOpacity>
         <View style={styles.moreButtonsStyle}>
+          {/*
           <TouchableOpacity
             onPress={emergencyHandler}
             style={styles.emergencyStyle}>
@@ -37,6 +38,7 @@ const Header = ({showActions, citySelection}) => {
               HELP
             </Text>
           </TouchableOpacity>
+          */}
           <TouchableOpacity onPress={aboutHandler}>
             <Icon
               name="information-circle"
