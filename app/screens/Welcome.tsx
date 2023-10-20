@@ -17,7 +17,10 @@ const Welcome = () => {
   const titleText = 'Áfangastaður';
 
   return (
-    <Container edges={['bottom']} alignment="center">
+    <Container
+      edges={['top', 'bottom']}
+      alignment="center"
+      style={{backgroundColor: theme.backgroundColor}}>
       <Rounded
         radius={16}
         smooth
