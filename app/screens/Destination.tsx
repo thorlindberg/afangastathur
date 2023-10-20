@@ -46,7 +46,7 @@ const Destination = ({location}: PinProps) => {
       titleText={location.title}
       detent="large">
       <Container scrollable divider scaling={1}>
-        <Container padding={false}>
+        <Container padding={false} edges={['bottom']}>
           <Container padding={false} gap={'small'}>
             <Text size="title" bold color={theme.primaryColor}>
               {location.title}
@@ -85,7 +85,7 @@ const Destination = ({location}: PinProps) => {
           />
         </Container>
         {location.artifact && (
-          <Container padding={false}>
+          <Container padding={false} edges={['bottom']}>
             <Text size="large" bold color={theme.primaryColor}>
               Artifacts
             </Text>
@@ -98,7 +98,7 @@ const Destination = ({location}: PinProps) => {
           </Container>
         )}
         {location.hours && (
-          <Container padding={false}>
+          <Container padding={false} edges={['bottom']}>
             <Text size="large" bold color={theme.primaryColor}>
               Opening hours
             </Text>
