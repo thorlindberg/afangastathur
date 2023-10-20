@@ -6,7 +6,7 @@ import Button from '../components/Button/Button';
 import HeaderImage from '../components/HeaderImage/HeaderImage';
 import {PinProps} from '../components/Pin/types';
 import {Linking, Share} from 'react-native';
-import Slide from '../components/Slide/Slide';
+// import Slide from '../components/Slide/Slide';
 import TitleBar from '../components/TitleBar/TitleBar';
 import {useModal} from 'react-native-modal-provider';
 import browserHandler from '../handlers/browserHandler';
@@ -105,6 +105,7 @@ const Destination = ({location}: PinProps) => {
             <Text color={theme.primaryColor}>{location.hours}</Text>
           </Container>
         )}
+        {/*
         {(location.phone || location.email) && (
           <Container padding={false}>
             <Text size="large" bold color={theme.primaryColor}>
@@ -132,6 +133,7 @@ const Destination = ({location}: PinProps) => {
             )}
           </Container>
         )}
+        */}
         <Container padding={false} edges={['bottom']}>
           <Text size="large" bold color={theme.primaryColor}>
             Learn more
