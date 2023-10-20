@@ -17,10 +17,7 @@ const Welcome = () => {
   const titleText = 'Áfangastaður';
 
   return (
-    <Container
-      scrollable
-      padding={false}
-      style={{backgroundColor: theme.backgroundColor}}>
+    <Container padding={false} style={{backgroundColor: theme.backgroundColor}}>
       <Container edges={['top', 'bottom']} alignment="center" gap="xlarge">
         <Container alignment="center">
           <Rounded
