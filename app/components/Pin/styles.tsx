@@ -5,15 +5,13 @@ const useStyle = () => {
   const {theme} = useTheme();
   return StyleSheet.create({
     pinStyle: {
-      alignItems: 'center',
-      justifyContent: 'center',
       width: 48,
       height: 48,
       backgroundColor: theme.backgroundColor,
     },
     imageStyle: {
-      width: 48,
-      height: 48,
+      width: 40,
+      height: 40,
       position: 'absolute',
       backgroundColor: theme.backgroundColor,
     },
