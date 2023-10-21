@@ -6,7 +6,6 @@ import Button from '../components/Button/Button';
 import HeaderImage from '../components/HeaderImage/HeaderImage';
 import {PinProps} from '../components/Pin/types';
 import {Linking, Share} from 'react-native';
-// import Slide from '../components/Slide/Slide';
 import TitleBar from '../components/TitleBar/TitleBar';
 import {useModal} from 'react-native-modal-provider';
 import browserHandler from '../handlers/browserHandler';
@@ -28,6 +27,47 @@ const Destination = ({location}: PinProps) => {
     }
   };
 
+  const directionsHandler = () => {
+    Linking.canOpenURL(
+      `comgooglemaps://?q=${location.latitude},${location.longitude}`,
+    )
+      .then(googleSupported => {
+        if (googleSupported) {
+          Linking.openURL(
+            `comgooglemaps://?q=${location.latitude},${location.longitude}`,
+          );
+        } else {
+          Linking.canOpenURL(
+            `maps://?q=${location.latitude},${location.longitude}`,
+          )
+            .then(appleSupported => {
+              if (appleSupported) {
+                Linking.openURL(
+                  `maps://?q=${location.latitude},${location.longitude}`,
+                );
+              } else {
+                console.log('Maps apps are not installed on the device.');
+                Linking.openURL(
+                  `https://www.google.com/maps/dir/?api=1&destination=${location.latitude},${location.longitude}`,
+                );
+              }
+            })
+            .catch(error => {
+              console.error(
+                'An error occurred while trying to open Apple Maps: ',
+                error,
+              );
+            });
+        }
+      })
+      .catch(error => {
+        console.error(
+          'An error occurred while trying to open Google Maps: ',
+          error,
+        );
+      });
+  };
+
   const openURL = useCallback(() => {
     const linkURL = location.url;
     browserHandler(linkURL);
@@ -45,8 +85,8 @@ const Destination = ({location}: PinProps) => {
       titleColor={'black'}
       titleText={location.title}
       detent="large">
-      <Container scrollable divider scaling={1}>
-        <Container padding={false} edges={['bottom']}>
+      <Container scrollable divider scaling={1} edges={['bottom']}>
+        <Container padding={false}>
           <Container padding={false} gap={'small'}>
             <Text size="title" bold color={theme.primaryColor}>
               {location.title}
@@ -61,31 +101,11 @@ const Destination = ({location}: PinProps) => {
             color={theme.primaryColor}
             text="Get directions in Google Maps"
             icon="map"
-            onPress={() => {
-              Linking.canOpenURL(
-                `comgooglemaps://?q=${location.latitude},${location.longitude}`,
-              )
-                .then(supported => {
-                  if (supported) {
-                    Linking.openURL(
-                      `comgooglemaps://?q=${location.latitude},${location.longitude}`,
-                    );
-                  } else {
-                    console.log('Google Maps is not installed on the device.');
-                    `https://www.google.com/maps/dir/?api=1&destination=${location.latitude},${location.longitude}`;
-                  }
-                })
-                .catch(error => {
-                  console.error(
-                    'An error occurred while trying to open Google Maps: ',
-                    error,
-                  );
-                });
-            }}
+            onPress={directionsHandler}
           />
         </Container>
         {location.artifact && (
-          <Container padding={false} edges={['bottom']}>
+          <Container padding={false}>
             <Text size="large" bold color={theme.primaryColor}>
               Artifacts
             </Text>
@@ -98,43 +118,14 @@ const Destination = ({location}: PinProps) => {
           </Container>
         )}
         {location.hours && (
-          <Container padding={false} edges={['bottom']}>
+          <Container padding={false}>
             <Text size="large" bold color={theme.primaryColor}>
               Opening hours
             </Text>
             <Text color={theme.primaryColor}>{location.hours}</Text>
           </Container>
         )}
-        {/*
-        {(location.phone || location.email) && (
-          <Container padding={false}>
-            <Text size="large" bold color={theme.primaryColor}>
-              Contact information
-            </Text>
-            {location.phone && (
-              <Slide
-                onPress={() => {
-                  Linking.openURL(`telprompt:${location.phone}`);
-                }}
-                color="#158020"
-                text={`Slide to call ${location.phone}`}
-                icon="phone"
-              />
-            )}
-            {location.email && (
-              <Button
-                color={theme.accentColor}
-                text={location.email}
-                icon="mail"
-                onPress={() => {
-                  Linking.openURL(`mailto:${location.email}`);
-                }}
-              />
-            )}
-          </Container>
-        )}
-        */}
-        <Container padding={false} edges={['bottom']}>
+        <Container padding={false}>
           <Text size="large" bold color={theme.primaryColor}>
             Learn more
           </Text>
