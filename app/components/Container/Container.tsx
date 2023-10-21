@@ -20,15 +20,15 @@ const Container = ({
   const {getScroll, setScroll} = useScroll();
   const scrolled = getScroll('divider');
   const safeAreaInsets = useSafeAreaInsets();
-  const opacity = React.useRef(new Animated.Value(0)).current;
 
+  const opacity = React.useRef(new Animated.Value(0)).current;
   React.useEffect(() => {
     Animated.timing(opacity, {
       toValue: scrolled ? 1 : 0,
       duration: 150,
       useNativeDriver: true,
     }).start();
-  }, [scrolled, opacity]);
+  }, [opacity, scrolled]);
 
   const styles = useStyle(
     scrollable,
@@ -40,6 +40,7 @@ const Container = ({
     gap,
     edges,
   );
+
   const childrenArray = React.Children.toArray(children);
   const childrenWithSeparators = childrenArray.flatMap((child, index) => {
     if (index === childrenArray.length - 1) {
@@ -70,7 +71,7 @@ const Container = ({
 
   return divider ? (
     scrollable ? (
-      <View style={{...style, paddingBottom: safeAreaInsets.bottom}}>
+      <View style={[style, {paddingBottom: safeAreaInsets.bottom}]}>
         <Animated.View style={{...styles.borderStyle, opacity}} />
         <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
           {childrenWithSeparators}
@@ -80,7 +81,7 @@ const Container = ({
       <View style={[style, styles.container]}>{childrenWithSeparators}</View>
     )
   ) : scrollable ? (
-    <View style={{...style, paddingBottom: safeAreaInsets.bottom}}>
+    <View style={[style, {paddingBottom: safeAreaInsets.bottom}]}>
       <Animated.View style={{...styles.borderStyle, opacity}} />
       <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
         <View style={styles.container}>{children}</View>

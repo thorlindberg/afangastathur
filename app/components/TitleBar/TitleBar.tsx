@@ -22,7 +22,7 @@ const TitleBar = ({
   const {getScroll, resetScroll} = useScroll();
   const scrolled = getScroll('titlebar');
 
-  const opacity = React.useRef(new Animated.Value(scrolled ? 1 : 0)).current;
+  const opacity = React.useRef(new Animated.Value(0)).current;
   React.useEffect(() => {
     Animated.timing(opacity, {
       toValue: scrolled ? 1 : 0,
@@ -75,7 +75,6 @@ const TitleBar = ({
               cancellationAction();
               resetScroll();
             }}>
-            {/* resetScroll(); */}
             <Text style={styles.cancellationStyle}>{cancellationText}</Text>
           </TouchableOpacity>
         )}
