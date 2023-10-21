@@ -85,7 +85,7 @@ const Destination = ({location}: PinProps) => {
       titleColor={'black'}
       titleText={location.title}
       detent="large">
-      <Container scrollable divider scaling={1} edges={['bottom']}>
+      <Container scrollable divider edges={['bottom']}>
         <Container padding={false}>
           <Container padding={false} gap={'small'}>
             <Text size="title" bold color={theme.primaryColor}>
