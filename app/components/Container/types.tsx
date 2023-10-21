@@ -9,9 +9,16 @@ export type JustifyContentType =
   | 'space-around'
   | 'space-evenly';
 
+export type FlexDirectionType =
+  | 'column'
+  | 'row'
+  | 'row-reverse'
+  | 'column-reverse';
+
 interface ContainerProps {
   children: React.ReactNode;
   scrollable?: boolean;
+  direction?: FlexDirectionType;
   alignment?: FlexAlignType;
   scaling?: number;
   justifying?: JustifyContentType;

@@ -1,6 +1,5 @@
-import {FlexAlignType} from 'react-native';
-import {StyleSheet} from 'react-native';
-import {JustifyContentType} from './types';
+import {FlexAlignType, StyleSheet} from 'react-native';
+import {JustifyContentType, FlexDirectionType} from './types';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const sizes = {
@@ -12,6 +11,7 @@ const sizes = {
 
 const useStyle = (
   scrollable: boolean = false,
+  direction: FlexDirectionType = 'column',
   alignment: FlexAlignType = 'flex-start',
   justifying: JustifyContentType = 'flex-start',
   scaling = 1,
@@ -29,6 +29,7 @@ const useStyle = (
     },
     container: {
       flex: scaling,
+      flexDirection: direction,
       alignItems: alignment,
       justifyContent: justifying,
       width: '100%',

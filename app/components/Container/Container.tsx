@@ -8,12 +8,13 @@ import {useScroll} from 'react-native-scroll-provider';
 const Container = ({
   children,
   scrollable = false,
+  direction,
   alignment,
-  justifying = 'flex-start',
+  justifying,
   scaling,
   divider = false,
-  padding = true,
-  gap = 'normal',
+  padding,
+  gap,
   edges,
   style,
 }: ContainerProps) => {
@@ -24,7 +25,7 @@ const Container = ({
   const opacity = React.useRef(new Animated.Value(0)).current;
   React.useEffect(() => {
     Animated.timing(opacity, {
-      toValue: scrolled ? 1 : 0,
+      toValue: scrolled ? 1 : 1,
       duration: 150,
       useNativeDriver: true,
     }).start();
@@ -32,6 +33,7 @@ const Container = ({
 
   const styles = useStyle(
     scrollable,
+    direction,
     alignment,
     justifying,
     scaling,
