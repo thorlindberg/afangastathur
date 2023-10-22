@@ -59,23 +59,14 @@ const Container = ({
     }
   };
 
-  return divider ? (
-    scrollable ? (
-      <ScrollView
-        onScroll={handleScroll}
-        scrollEventThrottle={16}
-        style={style}>
-        {childrenWithSeparators}
-      </ScrollView>
-    ) : (
-      <View style={[style, styles.container]}>{childrenWithSeparators}</View>
-    )
-  ) : scrollable ? (
-    <ScrollView onScroll={handleScroll} scrollEventThrottle={16} style={style}>
-      <View style={styles.container}>{children}</View>
+  return scrollable ? (
+    <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
+      {divider ? childrenWithSeparators : children}
     </ScrollView>
   ) : (
-    <View style={[style, styles.container]}>{children}</View>
+    <View style={[style, styles.container]}>
+      {divider ? childrenWithSeparators : children}
+    </View>
   );
 };
 
