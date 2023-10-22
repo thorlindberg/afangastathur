@@ -20,8 +20,12 @@ const Emergency = () => {
       cancellationAction={closeModal}
       confirmationColor={theme.backgroundColor}
       detent="small">
-      <Container edges={['bottom']} gap="large">
-        <Container alignment="center" gap="small">
+      <Container edges={['bottom']} justifying="center" gap="large">
+        <Container
+          padding={false}
+          gap="small"
+          alignment="center"
+          justifying="flex-end">
           <Text color={theme.backgroundColor} bold size="title">
             {titleText}
           </Text>
@@ -29,12 +33,14 @@ const Emergency = () => {
             {bodyText}
           </Text>
         </Container>
-        <Slide
-          onPress={() => console.log('calling')}
-          color="#DC1E35"
-          text="Slide for emergency call"
-          icon="phone"
-        />
+        <Container padding={false}>
+          <Slide
+            onPress={() => console.log('calling')}
+            color="#DC1E35"
+            text="Slide for emergency call"
+            icon="phone"
+          />
+        </Container>
       </Container>
     </TitleBar>
   );
