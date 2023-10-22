@@ -39,8 +39,8 @@ const About = () => {
       titleText={locationsData.app.name}
       icon={icon}
       detent="medium">
-      <Container scrollable padding={false}>
-        <Container alignment="center" gap={'xlarge'}>
+      <Container scrollable gap="xlarge" padding={false}>
+        <Container gap="xlarge">
           <Container padding={false} alignment="center">
             <Rounded
               radius={16}

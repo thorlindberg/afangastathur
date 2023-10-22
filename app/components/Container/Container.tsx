@@ -1,8 +1,7 @@
 import * as React from 'react';
-import {Animated, ScrollView, View} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import useStyle from './styles';
 import ContainerProps from './types';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useScroll} from 'react-native-scroll-provider';
 
 const Container = ({
@@ -18,18 +17,7 @@ const Container = ({
   edges,
   style,
 }: ContainerProps) => {
-  const {getScroll, setScroll} = useScroll();
-  const scrolled = getScroll('divider');
-  const safeAreaInsets = useSafeAreaInsets();
-
-  const opacity = React.useRef(new Animated.Value(0)).current;
-  React.useEffect(() => {
-    Animated.timing(opacity, {
-      toValue: scrolled ? 1 : 1,
-      duration: 150,
-      useNativeDriver: true,
-    }).start();
-  }, [opacity, scrolled]);
+  const {setScroll} = useScroll();
 
   const styles = useStyle(
     scrollable,
@@ -73,22 +61,19 @@ const Container = ({
 
   return divider ? (
     scrollable ? (
-      <View style={[style, {paddingBottom: safeAreaInsets.bottom}]}>
-        <Animated.View style={{...styles.borderStyle, opacity}} />
-        <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
-          {childrenWithSeparators}
-        </ScrollView>
-      </View>
+      <ScrollView
+        onScroll={handleScroll}
+        scrollEventThrottle={16}
+        style={style}>
+        {childrenWithSeparators}
+      </ScrollView>
     ) : (
       <View style={[style, styles.container]}>{childrenWithSeparators}</View>
     )
   ) : scrollable ? (
-    <View style={[style, {paddingBottom: safeAreaInsets.bottom}]}>
-      <Animated.View style={{...styles.borderStyle, opacity}} />
-      <ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
-        <View style={styles.container}>{children}</View>
-      </ScrollView>
-    </View>
+    <ScrollView onScroll={handleScroll} scrollEventThrottle={16} style={style}>
+      <View style={styles.container}>{children}</View>
+    </ScrollView>
   ) : (
     <View style={[style, styles.container]}>{children}</View>
   );

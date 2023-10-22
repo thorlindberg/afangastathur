@@ -11,15 +11,17 @@ const useStyle = (
 ) => {
   const safeAreaInsets = useSafeAreaInsets();
   return StyleSheet.create({
+    dividerStyle: {
+      marginHorizontal: 24,
+      height: 1,
+      backgroundColor: 'rgb(225, 225, 225)',
+    },
     containerStyle: {
       flex: 1,
-      width: '100%',
-      height: '100%',
       backgroundColor: backgroundColor,
       paddingTop: detent === 'large' ? safeAreaInsets.top : 0,
     },
     titleBarStyle: {
-      flex: 0,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',

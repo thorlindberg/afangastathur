@@ -20,16 +20,26 @@ const TitleBar = ({
   detent,
 }: TitleBarProps) => {
   const {getScroll, resetScroll} = useScroll();
-  const scrolled = getScroll('titlebar');
 
-  const opacity = React.useRef(new Animated.Value(0)).current;
+  const scrolled = getScroll('divider');
+  const opacityDivider = React.useRef(new Animated.Value(0)).current;
   React.useEffect(() => {
-    Animated.timing(opacity, {
+    Animated.timing(opacityDivider, {
       toValue: scrolled ? 1 : 0,
-      duration: 300,
-      useNativeDriver: true,
+      duration: 150,
+      useNativeDriver: false,
     }).start();
-  }, [opacity, scrolled]);
+  }, [opacityDivider, scrolled]);
+
+  const scrolledTitlebar = getScroll('titlebar');
+  const opacityTitlebar = React.useRef(new Animated.Value(0)).current;
+  React.useEffect(() => {
+    Animated.timing(opacityTitlebar, {
+      toValue: scrolledTitlebar ? 1 : 0,
+      duration: 300,
+      useNativeDriver: false,
+    }).start();
+  }, [opacityTitlebar, scrolledTitlebar]);
 
   const styles = useStyle(
     backgroundColor,
@@ -37,7 +47,7 @@ const TitleBar = ({
     confirmationColor,
     titleColor,
     detent,
-    opacity,
+    opacityTitlebar,
   );
 
   const animatedView = (
@@ -85,6 +95,7 @@ const TitleBar = ({
           </TouchableOpacity>
         )}
       </View>
+      <Animated.View style={{...styles.borderStyle, opacityDivider}} />
       {children}
     </View>
   );
