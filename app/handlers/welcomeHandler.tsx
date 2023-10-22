@@ -15,6 +15,8 @@ const useWelcomeHandler = () => {
         if (!result) {
           openModal({
             node: <Welcome />,
+            isPresented: true,
+            detent: 'medium',
           });
           AsyncStorage.setItem(APP_OPENED_KEY, 'true').catch(setErr => {
             console.error('[ERROR] Could not set AsyncStorage:', setErr);

@@ -52,7 +52,7 @@ const Welcome = () => {
             </Text>
           </Container>
         </Container>
-        <Container padding={false} gap="large">
+        <Container gap="large">
           <Container padding={false} alignment="center" direction="row">
             <Icon name="follow-the-signs" color="black" size={36} />
             <Container padding={false} justifying="center" gap="small">
@@ -92,13 +92,11 @@ const Welcome = () => {
             </Container>
           </Container>
         </Container>
-        <Container padding={false} justifying="flex-end">
-          <Button
-            color={theme.accentColor}
-            text="Continue"
-            onPress={closeModal}
-          />
-        </Container>
+        <Button
+          color={theme.accentColor}
+          text="Continue"
+          onPress={closeModal}
+        />
       </Container>
     </TitleBar>
   );
