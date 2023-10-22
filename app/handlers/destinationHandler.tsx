@@ -14,6 +14,7 @@ const useDestinationHandler = ({location}: PinProps) => {
         openModal({
           node: <Destination location={location} />,
           detent: 'large',
+          statusBarColor: 'dark-content',
         });
       })
       .catch(error => {
