@@ -4,7 +4,7 @@ import useStyle from './styles';
 import PinProps from './types';
 import useDestinationHandler from '../../handlers/destinationHandler';
 import Rounded from '../Rounded/Rounded';
-import {Animated, View} from 'react-native';
+import {Animated, Image, View} from 'react-native';
 
 const Pin = ({location}: PinProps) => {
   const styles = useStyle();
@@ -20,6 +20,16 @@ const Pin = ({location}: PinProps) => {
     }).start();
   }, [isLoaded, opacity]);
 
+  React.useEffect(() => {
+    Image.prefetch(location.image)
+      .then(() => {
+        setIsLoaded(true);
+      })
+      .catch(error => {
+        console.error('[ERROR] Image prefetch failed', error);
+      });
+  }, [location.image]);
+
   return (
     <Marker
       style={{opacity: 1}}
@@ -30,17 +40,23 @@ const Pin = ({location}: PinProps) => {
         latitude: location.latitude,
         longitude: location.longitude,
       }}>
-      <Rounded radius={1000} smooth style={styles.pinStyle}>
-        <View style={styles.pinStyle} />
-      </Rounded>
-      <Rounded radius={1000} smooth style={[styles.imageStyle, {margin: 4}]}>
-        <Animated.Image
-          source={{uri: location.image}}
-          style={[styles.imageStyle, {opacity: opacity}]}
-          resizeMode="cover"
-          onLoad={() => setIsLoaded(true)}
-        />
-      </Rounded>
+      {isLoaded && (
+        <>
+          <Rounded radius={1000} smooth style={styles.pinStyle}>
+            <View style={styles.pinStyle} />
+          </Rounded>
+          <Rounded
+            radius={1000}
+            smooth
+            style={[styles.imageStyle, {margin: 4}]}>
+            <Animated.Image
+              source={{uri: location.image}}
+              style={[styles.imageStyle, {opacity: opacity}]}
+              resizeMode="cover"
+            />
+          </Rounded>
+        </>
+      )}
     </Marker>
   );
 };
