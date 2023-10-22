@@ -41,11 +41,16 @@ const useStyle = (
         ? safeAreaInsets.bottom + 24
         : padding
         ? scrollable
-          ? safeAreaInsets.bottom + 2424
+          ? safeAreaInsets.bottom + 24
           : 24
         : 0,
       paddingTop: edges.includes('top') ? safeAreaInsets.top : 8,
       gap: sizes[gap],
+    },
+    dividerStyle: {
+      marginHorizontal: 24,
+      height: 1,
+      backgroundColor: 'rgb(225, 225, 225)',
     },
   });
 };
