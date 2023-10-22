@@ -21,7 +21,7 @@ const Pin = ({location}: PinProps) => {
       });
   }, [location.image]);
 
-  return (
+  return isLoaded ? (
     <Marker
       style={{opacity: 1}}
       key={location.url}
@@ -31,24 +31,19 @@ const Pin = ({location}: PinProps) => {
         latitude: location.latitude,
         longitude: location.longitude,
       }}>
-      {isLoaded && (
-        <>
-          <Rounded radius={1000} smooth style={styles.pinStyle}>
-            <View style={styles.pinStyle} />
-          </Rounded>
-          <Rounded
-            radius={1000}
-            smooth
-            style={[styles.imageStyle, {margin: 4}]}>
-            <Image
-              source={{uri: location.image}}
-              style={styles.imageStyle}
-              resizeMode="cover"
-            />
-          </Rounded>
-        </>
-      )}
+      <Rounded radius={1000} smooth style={styles.pinStyle}>
+        <View style={styles.pinStyle} />
+      </Rounded>
+      <Rounded radius={1000} smooth style={[styles.imageStyle, {margin: 4}]}>
+        <Image
+          source={{uri: location.image}}
+          style={styles.imageStyle}
+          resizeMode="cover"
+        />
+      </Rounded>
     </Marker>
+  ) : (
+    <></>
   );
 };
 
