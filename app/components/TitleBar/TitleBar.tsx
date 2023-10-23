@@ -18,6 +18,7 @@ const TitleBar = ({
   titleText,
   icon,
   detent,
+  scaling,
 }: TitleBarProps) => {
   const {getScroll, resetScroll} = useScroll();
 
@@ -48,6 +49,7 @@ const TitleBar = ({
     titleColor,
     detent,
     opacityTitlebar,
+    scaling,
   );
 
   const animatedView = (
@@ -79,7 +81,7 @@ const TitleBar = ({
   return (
     <View style={styles.containerStyle}>
       <View style={styles.titleBarStyle}>
-        {cancellationText && (
+        {cancellationText && cancellationAction && (
           <TouchableOpacity
             onPress={() => {
               cancellationAction();
@@ -95,7 +97,9 @@ const TitleBar = ({
           </TouchableOpacity>
         )}
       </View>
-      <Animated.View style={{...styles.borderStyle, opacityDivider}} />
+      <Animated.View
+        style={{...styles.dividerStyle, opacity: opacityDivider}}
+      />
       {children}
     </View>
   );

@@ -8,16 +8,16 @@ const useStyle = (
   titleColor,
   detent,
   opacity,
+  scaling = 1,
 ) => {
   const safeAreaInsets = useSafeAreaInsets();
   return StyleSheet.create({
     dividerStyle: {
-      marginHorizontal: 24,
       height: 1,
       backgroundColor: 'rgb(225, 225, 225)',
     },
     containerStyle: {
-      flex: 1,
+      flex: scaling,
       backgroundColor: backgroundColor,
       paddingTop: detent === 'large' ? safeAreaInsets.top : 0,
     },

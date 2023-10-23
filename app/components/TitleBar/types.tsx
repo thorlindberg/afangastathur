@@ -13,4 +13,5 @@ export interface TitleBarProps {
   titleText?: String;
   icon?: String;
   detent?: DetentProps;
+  scaling?: number;
 }
