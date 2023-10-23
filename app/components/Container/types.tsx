@@ -15,17 +15,21 @@ export type FlexDirectionType =
   | 'row-reverse'
   | 'column-reverse';
 
+type ScalingType = number | 'auto';
+type GapType = 'normal' | 'small' | 'large' | 'xlarge';
+type EdgesType = ('top' | 'bottom')[];
+
 interface ContainerProps {
   children: React.ReactNode;
   scrollable?: boolean;
   direction?: FlexDirectionType;
   alignment?: FlexAlignType;
-  scaling?: number;
+  scaling?: ScalingType;
   justifying?: JustifyContentType;
   divider?: boolean;
   padding?: boolean;
-  gap?: 'normal' | 'small' | 'large' | 'xlarge';
-  edges?: ('top' | 'bottom')[];
+  gap?: GapType;
+  edges?: EdgesType;
   style?: StyleProp<ViewStyle>;
 }
 
