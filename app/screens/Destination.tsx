@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import Container from '../components/Container/Container';
 import Text from '../components/Text/Text';
 import {useTheme} from '../theme/useTheme';
@@ -68,11 +68,6 @@ const Destination = ({location}: PinProps) => {
       });
   };
 
-  const openURL = useCallback(() => {
-    const linkURL = location.url;
-    browserHandler(linkURL);
-  }, [location.url]);
-
   return (
     <TitleBar
       backgroundColor={theme.backgroundColor}
@@ -134,7 +129,7 @@ const Destination = ({location}: PinProps) => {
               color={theme.primaryColor}
               text={location.url}
               icon="arrow-outward"
-              onPress={openURL}
+              onPress={() => browserHandler(location.url)}
             />
           )}
         </Container>
