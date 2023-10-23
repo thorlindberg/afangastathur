@@ -14,7 +14,7 @@ const useStyle = (
   direction: FlexDirectionType = 'column',
   alignment: FlexAlignType = 'flex-start',
   justifying: JustifyContentType = 'flex-start',
-  scaling = 1,
+  scaling = 'auto',
   divider = false,
   padding = true,
   gap = 'normal',
@@ -22,18 +22,12 @@ const useStyle = (
 ) => {
   const safeAreaInsets = useSafeAreaInsets();
   return StyleSheet.create({
-    borderStyle: {
-      backgroundColor: 'rgb(225, 225, 225)',
-      height: 1,
-      width: '100%',
-    },
     container: {
       flex: scaling,
       flexDirection: direction,
       alignItems: alignment,
       justifyContent: justifying,
       width: '100%',
-      height: '100%',
       padding: padding ? 24 : 0,
       paddingBottom: divider
         ? 24
