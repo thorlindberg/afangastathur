@@ -61,8 +61,8 @@ const Loading = () => {
           flex: 1,
         }}>
         <StatusBar animated barStyle="dark-content" />
-        <Container alignment="center" justifying="space-between">
-          <Container alignment="center" justifying="center" gap="small">
+        <Container alignment="center" scaling={1}>
+          <Container padding={false} alignment="center" gap="small">
             <Text size="title" bold color={theme.primaryColor}>
               {titleText}
             </Text>
@@ -70,13 +70,15 @@ const Loading = () => {
               {bodyText}
             </Text>
           </Container>
-          <Progress
-            color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
-            <Text
+          <Container padding={false} scaling={1} justifying="center">
+            <Progress
               color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
-              {dataState === 'error' ? errorText : loadingText}
-            </Text>
-          </Progress>
+              <Text
+                color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
+                {dataState === 'error' ? errorText : loadingText}
+              </Text>
+            </Progress>
+          </Container>
         </Container>
         <Animated.View style={{opacity: opacity}}>
           <AppArt source={artURL} />
