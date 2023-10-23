@@ -3,13 +3,9 @@ import Text from '../components/Text/Text';
 import {useTheme} from '../theme/useTheme';
 import Button from '../components/Button/Button';
 import Container from '../components/Container/Container';
-import Rounded from '../components/Rounded/Rounded';
-import {Image} from 'react-native';
 import {useModal} from 'react-native-modal-provider';
 import {Icon} from '@rneui/themed';
 import TitleBar from '../components/TitleBar/TitleBar';
-
-const iconURL = require('../assets/images/appicon.png');
 
 const Welcome = () => {
   const {closeModal} = useModal();
@@ -19,30 +15,8 @@ const Welcome = () => {
 
   return (
     <TitleBar backgroundColor={theme.backgroundColor}>
-      <Container edges={['bottom']} alignment="center">
+      <Container edges={['bottom']} alignment="center" scaling={1}>
         <Container padding={false} alignment="center">
-          <Rounded
-            radius={16}
-            smooth
-            style={{
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: 72,
-              height: 72,
-            }}
-            borderWidth={1}
-            borderColor="white">
-            <Image
-              source={iconURL}
-              style={{
-                width: 72,
-                height: 72,
-                position: 'absolute',
-                backgroundColor: theme.primaryColor,
-              }}
-              resizeMode="cover"
-            />
-          </Rounded>
           <Container padding={false} alignment="center" gap="small">
             <Text size="large" color={theme.primaryColor}>
               {bodyText}
@@ -52,10 +26,10 @@ const Welcome = () => {
             </Text>
           </Container>
         </Container>
-        <Container gap="large">
+        <Container justifying="center" scaling={1} gap="small">
           <Container padding={false} alignment="center" direction="row">
             <Icon name="follow-the-signs" color="black" size={36} />
-            <Container padding={false} justifying="center" gap="small">
+            <Container padding={false} gap="small" scaling={1}>
               <Text color={theme.primaryColor} bold>
                 Explore Iceland
               </Text>
@@ -71,7 +45,7 @@ const Welcome = () => {
               size={36}
               type="ionicon"
             />
-            <Container padding={false} justifying="center" gap="small">
+            <Container padding={false} gap="small" scaling={1}>
               <Text color={theme.primaryColor} bold>
                 Local amenities
               </Text>
@@ -82,7 +56,7 @@ const Welcome = () => {
           </Container>
           <Container padding={false} alignment="center" direction="row">
             <Icon name="emergency" color="#DC1E35" size={36} />
-            <Container padding={false} justifying="center" gap="small">
+            <Container padding={false} gap="small" scaling={1}>
               <Text color={theme.primaryColor} bold>
                 Emergency assistance
               </Text>
