@@ -62,15 +62,13 @@ const Loading = () => {
         }}>
         <StatusBar animated barStyle="dark-content" />
         <Container alignment="center" justifying="space-between">
-          <Container alignment="center" justifying="center">
-            <Container alignment="center" gap="small">
-              <Text size="title" bold color={theme.primaryColor}>
-                {titleText}
-              </Text>
-              <Text size="large" color={theme.primaryColor}>
-                {bodyText}
-              </Text>
-            </Container>
+          <Container alignment="center" justifying="center" gap="small">
+            <Text size="title" bold color={theme.primaryColor}>
+              {titleText}
+            </Text>
+            <Text size="large" color={theme.primaryColor}>
+              {bodyText}
+            </Text>
           </Container>
           <Progress
             color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
