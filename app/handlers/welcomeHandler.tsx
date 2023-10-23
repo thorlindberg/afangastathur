@@ -17,6 +17,7 @@ const useWelcomeHandler = () => {
             node: <Welcome />,
             isPresented: true,
             detent: 'medium',
+            statusBarColor: 'light-content',
           });
           AsyncStorage.setItem(APP_OPENED_KEY, 'true').catch(setErr => {
             console.error('[ERROR] Could not set AsyncStorage:', setErr);
