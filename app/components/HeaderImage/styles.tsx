@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const useStyle = () => {
+const useStyle = (isLoaded: boolean) => {
   return StyleSheet.create({
     containerStyle: {
       width: '100%',
@@ -10,7 +10,7 @@ const useStyle = () => {
     imageStyle: {
       width: '100%',
       height: 256,
-      position: 'absolute',
+      flex: isLoaded ? 1 : 0,
     },
   });
 };

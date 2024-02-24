@@ -7,8 +7,9 @@ import {Icon} from '@rneui/themed';
 import {useTheme} from '../../theme/useTheme';
 import useEmergencyHandler from '../../handlers/emergencyHandler';
 import useAboutHandler from '../../handlers/aboutHandler';
+import HeaderProps from './types';
 
-const Header = ({showActions, citySelection}) => {
+const Header = ({showActions, citySelection}: HeaderProps) => {
   const {theme} = useTheme();
   const styles = useStyle();
   const emergencyHandler = useEmergencyHandler();

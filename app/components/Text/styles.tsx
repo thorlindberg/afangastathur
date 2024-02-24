@@ -7,7 +7,7 @@ const sizes = {
   footnote: 10,
 };
 
-const useStyle = (color, size, bold, italic) => {
+const useStyle = ({color, size, bold, italic}: StyleProps) => {
   return StyleSheet.create({
     textStyle: {
       fontFamily: 'Inter',

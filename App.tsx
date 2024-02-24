@@ -10,6 +10,8 @@ import {ThemeProvider} from './app/theme/useTheme';
 import Content from './app/screens/Content';
 import StorybookUIRoot from './.storybook';
 
+// look at implementing rnmapbox for offline maps
+
 let Root = function App() {
   return (
     <SafeAreaProvider>
