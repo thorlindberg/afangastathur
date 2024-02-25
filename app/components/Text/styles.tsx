@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import TextProps from './types';
 
 const sizes = {
   title: 32,
@@ -7,7 +8,7 @@ const sizes = {
   footnote: 10,
 };
 
-const useStyle = ({color, size, bold, italic}: StyleProps) => {
+const useStyle = ({color, size, bold, italic}: TextProps) => {
   return StyleSheet.create({
     textStyle: {
       fontFamily: 'Inter',

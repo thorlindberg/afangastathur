@@ -10,7 +10,7 @@ const Text = ({
   bold = false,
   italic = false,
 }: TextProps) => {
-  const styles = useStyle(color, size, bold, italic);
+  const styles = useStyle({color, size, bold, italic});
   return <ReactText style={styles.textStyle}>{children}</ReactText>;
 };
 
