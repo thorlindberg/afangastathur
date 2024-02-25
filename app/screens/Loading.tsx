@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Animated, StatusBar} from 'react-native';
+import {StatusBar, View} from 'react-native';
 import Text from '../components/Text/Text';
 import Progress from '../components/Progress/Progress';
 import {SafeAreaView} from 'react-native-safe-area-context';
@@ -14,7 +14,7 @@ import {useDispatch} from 'react-redux';
 import {dataHandler} from '../handlers/dataHandler';
 import TitleBar from '../components/TitleBar/TitleBar';
 
-const artURL = require('../assets/images/IMG_7671.jpg');
+const artURL = require('../assets/images/background.png');
 const localData = require('../assets/locations.json');
 
 const Loading = () => {
@@ -29,29 +29,11 @@ const Loading = () => {
     }
   });
 
-  const opacity = React.useRef(new Animated.Value(0)).current;
-  React.useEffect(() => {
-    Animated.timing(opacity, {
-      toValue: dataState === 'error' ? 0.2 : 1,
-      duration: 300,
-      useNativeDriver: false,
-    }).start();
-  }, [opacity, dataState]);
-
-  const opacityButton = React.useRef(new Animated.Value(0)).current;
-  React.useEffect(() => {
-    Animated.timing(opacityButton, {
-      toValue: dataState === 'error' ? 1 : 0,
-      duration: 300,
-      useNativeDriver: false,
-    }).start();
-  }, [opacityButton, dataState]);
-
   const titleText = 'Áfangastaður';
-  const bodyText = '- Explore Iceland';
+  const bodyText = 'Explore Iceland';
   const loadingText = 'Fetching destinations...';
-  const errorText = 'Destinations are unavailable';
-  const buttonText = 'Continue with fallback destinations';
+  const errorText = 'Latest destinations unavailable';
+  const buttonText = 'Continue with most recent destinations';
 
   return (
     <TitleBar backgroundColor={theme.backgroundColor}>
@@ -61,8 +43,17 @@ const Loading = () => {
           flex: 1,
         }}>
         <StatusBar animated barStyle="dark-content" />
-        <Container alignment="center" scaling={1}>
-          <Container padding={false} alignment="center" gap="small">
+        <Container alignment="center">
+          <AppArt source={artURL} />
+        </Container>
+        <Container
+          justifying="space-between"
+          style={{position: 'absolute', height: '100%'}}>
+          <Container
+            padding={false}
+            alignment="center"
+            gap="small"
+            edges={['top']}>
             <Text size="title" bold color={theme.primaryColor}>
               {titleText}
             </Text>
@@ -70,34 +61,29 @@ const Loading = () => {
               {bodyText}
             </Text>
           </Container>
-          <Container padding={false} scaling={1} justifying="center">
-            <Progress
-              color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
-              <Text
-                color={dataState === 'error' ? '#DC1E35' : theme.primaryColor}>
-                {dataState === 'error' ? errorText : loadingText}
-              </Text>
-            </Progress>
+          <Container padding={false} alignment="center">
+            {dataState === 'error' ? (
+              <Text color={theme.primaryColor}>{errorText}</Text>
+            ) : (
+              <Progress color={theme.primaryColor}>
+                <Text color={theme.primaryColor}>{loadingText}</Text>
+              </Progress>
+            )}
+            {dataState === 'error' && (
+              <View
+                style={{
+                  width: '100%',
+                }}>
+                <Button
+                  active={dataState === 'error'}
+                  color="#DC1E35"
+                  text={buttonText}
+                  onPress={() => dataHandler(dispatch, 'loaded', localData)}
+                />
+              </View>
+            )}
           </Container>
         </Container>
-        <Animated.View style={{opacity: opacity}}>
-          <AppArt source={artURL} />
-        </Animated.View>
-        <Animated.View
-          style={{
-            position: 'absolute',
-            width: '100%',
-            opacity: opacityButton,
-          }}>
-          <Container edges={['bottom']}>
-            <Button
-              active={dataState === 'error'}
-              color="#DC1E35"
-              text={buttonText}
-              onPress={() => dataHandler(dispatch, 'loaded', localData)}
-            />
-          </Container>
-        </Animated.View>
       </SafeAreaView>
     </TitleBar>
   );
